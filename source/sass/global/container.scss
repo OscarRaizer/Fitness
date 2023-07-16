@@ -1,0 +1,30 @@
+.container {
+font-family: "AlumniSans";
+
+color: #000000;
+text-align: right;
+font-family: Alumni Sans;
+font-size: 92px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: 4.6px;
+
+
+  width: 100%;
+  max-width: 1920px;
+  margin: 20px;
+  padding: 0 40px;
+
+  @include vp-1439 {
+    padding: 0 32px;
+  }
+
+  @include vp-1023 {
+    padding: 0 24px;
+  }
+
+  @include vp-767 {
+    padding: 0 16px;
+  }
+}
