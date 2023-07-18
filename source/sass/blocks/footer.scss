@@ -1,0 +1,56 @@
+.footer {
+  width: 100%;
+  background-color: $color-black-russian;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: $color-default-white;
+  align-items: center;
+}
+
+.footer__logo {
+  font-family: "AlumniSans";
+  color: $color-default-white;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 26px;
+}
+
+.footer__navigation-list {
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+}
+
+.footer__navigation-item {
+  font-family: $ff-roboto-condensed;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+// Тут надо отступы допилить
+.footer {
+  .container {
+    padding-top: 41px;
+    padding-bottom: 32px;
+  }
+
+  @include vp-1199 {
+    padding-top: 40px;
+  }
+
+  @include vp-767 {
+    padding-top: 15px;
+  }
+}
+
+.footer__social-list {
+  margin: 0;
+}
