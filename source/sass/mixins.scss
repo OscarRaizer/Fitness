@@ -11,3 +11,8 @@
     @content;
   }
 }
+
+@mixin text-small {
+  font-size: 14px;
+  line-height: 22px;
+}

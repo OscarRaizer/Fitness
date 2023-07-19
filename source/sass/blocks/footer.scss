@@ -1,56 +1,133 @@
 .footer {
-  width: 100%;
   background-color: $color-black-russian;
 }
 
 .footer__wrapper {
+  padding-top: 34px;
+  padding-bottom: 34px;
   display: flex;
-  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: space-between;
-  color: $color-default-white;
   align-items: center;
-}
-
-.footer__logo {
-  font-family: "AlumniSans";
   color: $color-default-white;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  font-size: 26px;
-}
-
-.footer__navigation-list {
-  margin: 0;
-  list-style-type: none;
-  display: flex;
-  gap: 40px;
-}
-
-.footer__navigation-item {
-  font-family: $ff-roboto-condensed;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-// Тут надо отступы допилить
-.footer {
-  .container {
-    padding-top: 41px;
-    padding-bottom: 32px;
-  }
 
   @include vp-1199 {
-    padding-top: 40px;
+    padding-top: 45px;
   }
 
   @include vp-767 {
-    padding-top: 15px;
+    padding: 45px 15px 52px;
+    display: block;
+    column-count: 2;
+    column-gap: 28px;
+  }
+}
+
+.footer__list-links {
+  margin: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 500px;
+  list-style-type: none;
+  column-gap: 40px;
+
+  @include vp-1199 {
+    // padding-left: 54px;
+    column-gap: 30px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 54px;
+    padding: 0;
+    display: block;
+  }
+}
+
+.footer__item {
+  @include vp-767 {
+    width: 100%;
+    margin-top: 16px;
+    display: inline-block;
+  }
+}
+
+.footer__link {
+  position: relative;
+  padding: 0;
+  color: $color-default-white;
+  background: none;
+  border: none;
+
+  @include text-small;
+
+  @include vp-767 {
+    font-size: 16px;
+  }
+
+  &:hover {
+    &::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 1px;
+      background-color: $color-default-white;
+    }
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-default-white;
+    outline-offset: 5px;
+  }
+
+  &:active {
+    outline: none;
+
+    &::after {
+      content: none;
+    }
   }
 }
 
 .footer__social-list {
   margin: 0;
+  display: flex;
+  list-style-type: none;
+  gap: 11px;
+
+  @include vp-767 {
+    padding: 0;
+    justify-content: start;
+    column-span: all;
+  }
+}
+
+.footer__social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $color-default-white;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus-visible {
+    // background-color: $color-persian-blue;
+    fill: $color-default-white;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-primary;
+  }
+
+  &:disabled {
+    background-color: #4f545f;
+    fill: $color-black-russian;
+    pointer-events: none;
+  }
 }

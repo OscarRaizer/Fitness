@@ -4,10 +4,8 @@
   background: $conic-gradient;
 }
 
-.header {
-  .container {
-    padding-top: 30px;
-  }
+.header .container {
+  padding-top: 30px;
 
   @include vp-1199 {
     padding-top: 40px;
