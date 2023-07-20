@@ -339,7 +339,7 @@ template {
   font-weight: 600;
   font-style: normal;
   font-display: swap;
-  font-family: "AlumniSans";
+  font-family: "Alumni Sans";
   src: url("../../fonts/AlumniSans/AlumniSans-SemiBold.woff2") format("woff2"), url("../../fonts/AlumniSans/AlumniSans-SemiBold.woff") format("woff");
 }
 *,
@@ -574,7 +574,7 @@ ul {
   height: 658px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  background: conic-gradient(from 90deg at 16.03% 39.06%, #B80027, #003D85 62deg, #B80027 335deg);
+  background: conic-gradient(from 90deg at 16.03% 39.06%, #b80027, #003d85 62deg, #b80027 335deg);
 }
 
 .header .container {
@@ -598,7 +598,7 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: "AlumniSans";
+  font-family: "Alumni Sans", "Arial", sans-serif;
   color: #ffffff;
   font-style: normal;
   font-weight: 600;
@@ -629,7 +629,7 @@ ul {
 }
 
 .navigation__logo {
-  font-family: "AlumniSans";
+  font-family: "Alumni Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -714,6 +714,7 @@ ul {
 }
 
 .footer__link {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   position: relative;
   padding: 0;
   color: #ffffff;

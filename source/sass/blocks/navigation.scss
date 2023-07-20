@@ -1,7 +1,7 @@
 .navigation {
   display: flex;
   justify-content: space-between;
-  font-family: "AlumniSans";
+  font-family: $ff-alumni-sans;
   color: #ffffff;
   font-style: normal;
   font-weight: 600;
@@ -30,7 +30,7 @@
 }
 
 .navigation__logo {
-  font-family: "AlumniSans";
+  font-family: $ff-alumni-sans;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
