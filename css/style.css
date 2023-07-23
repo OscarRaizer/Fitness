@@ -849,7 +849,7 @@ ul {
   -ms-grid-rows: (auto)[3];
   grid-template-rows: repeat(3, auto);
   padding-top: 121px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .hero__info-wrapper ul {
@@ -920,7 +920,7 @@ ul {
   -ms-grid-row: 3;
   -ms-grid-row-span: 1;
   grid-row: 3/4;
-  color: #fff;
+  color: #ffffff;
   margin-left: auto;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -942,6 +942,13 @@ ul {
   background-color: #332254;
   width: 500px;
   height: 556px;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 36px;
+  letter-spacing: 0.72px;
+  line-height: 1;
 }
 
 /* @mixin hover-focus {
@@ -1033,6 +1040,11 @@ ul {
 
   .hero__button {
     padding: 22px 31px;
+  }
+
+  .logo {
+    font-size: 24px;
+    letter-spacing: 0.48px;
   }
 }
 
@@ -1129,5 +1141,10 @@ ul {
 
   .hero__photo-wrapper {
     display: none;
+  }
+
+  .logo {
+    font-size: 20px;
+    letter-spacing: 0.4px;
   }
 }
