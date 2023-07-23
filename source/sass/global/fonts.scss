@@ -29,3 +29,11 @@
   font-family: "Alumni Sans";
   src: url("../fonts/AlumniSans/AlumniSans-SemiBold.woff2") format("woff2"), url("../fonts/AlumniSans/AlumniSans-SemiBold.woff") format("woff");
 }
+
+@font-face {
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Alumni Sans";
+  src: url("../fonts/AlumniSans/AlumniSans-ExtraBold.woff2") format("woff2"), url("../fonts/AlumniSans/AlumniSans-ExtraBold.woff") format("woff");
+}

@@ -5,10 +5,11 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Описание проекта">
+  <meta name="description" content="Фитнес центр Supergym">
   <title>Fitness</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/AlumniSans/AlumniSans-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/AlumniSans/AlumniSans-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/RobotoCondensed/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/RobotoCondensed/RobotoCondensed-Light.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/RobotoCondensed/RobotoCondensed-Regular.woff2" as="font" type="font/woff2"
@@ -18,11 +19,11 @@
 <body>
   <div class="wrapper">
     <header class="header-and-hero-wrapper">
-      <div class="header">
-        <div class="container">
+      <div class="container">
+        <div class="header">
           <nav class="navigation">
             <a class="navigation__logo" href="index.html">
-              SYPERGYM
+              SUPERGYM
             </a>
             <a class="navigation__number" href="tel:+78005555555">
               8-800-555-55-55
@@ -30,21 +31,23 @@
           </nav>
         </div>
       </div>
-      <!-- <div class="hero">
-          <div class="container">
-            <div class="hero__container__wrapper">
-              <div class="hero__info">
-                <span>Тренажёрный зал Групповые занятия Кардио-зона</span>
-                <span>омск</span>
-                <span>ФИТНЕС ЦЕНТР</span>
-                <button>Купить абонемент</button>
-              </div>
-              <div class="hero__photo">
-                <img src="img/hero.png" alt="hero photo" width="500px" height="556">
-              </div>
-            </div>
+      <div class="hero">
+        <div class="container">
+          <div class="hero__info-wrapper">
+            <ul class="hero__description">
+              <li class="hero__description-item">Тренажёрный зал</li>
+              <li class="hero__description-item">Групповые занятия</li>
+              <li class="hero__description-item">Кардио-зона</li>
+            </ul>
+            <span>омск</span>
+            <h1 class="hero__info-title">Фитнес центр</h1>
+            <a href="#" class="hero__button btn">Купить абонемент</a>
           </div>
-        </div> -->
+          <div class="hero__photo-wrapper">
+            <img class="hero__photo" src="img/hero.png" alt="hero photo" width="500px" height="556px">
+          </div>
+        </div>
+      </div>
     </header>
     <main>
     </main>
@@ -52,7 +55,7 @@
       <div class="container">
         <div class="footer__wrapper">
           <a class="footer__logo navigation__logo" href="index.html" aria-label="Логотип спортзала SUPERGYM">
-            SYPERGYM
+            SUPERGYM
           </a>
           <ul class="footer__list-links">
             <li class="footer__item footer__item--services">

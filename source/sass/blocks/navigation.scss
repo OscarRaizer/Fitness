@@ -1,17 +1,30 @@
 .navigation {
   display: flex;
   justify-content: space-between;
+}
+
+.navigation__logo {
+  color: #ffffff;
+  font-size: 36px;
+  letter-spacing: 0.72px;
+  line-height: 1;
+}
+
+.navigation__number {
+  font-size: 26px;
+  letter-spacing: 0.78px;
+  line-height: 1;
+  align-items: center;
+  text-align: center;
+}
+
+.navigation a {
+  display: block;
   font-family: $ff-alumni-sans;
   color: #ffffff;
   font-style: normal;
   font-weight: 600;
-  line-height: normal;
-}
-
-.navigation a {
-  color: #ffffff;
-  font-size: 36px;
-  letter-spacing: 0.72px;
+  line-height: 1;
 
   @include vp-1199 {
     font-size: 24px;
@@ -22,20 +35,4 @@
     font-size: 20px;
     letter-spacing: 0.4px;
   }
-}
-
-.navigation__number {
-  font-size: 26px;
-  letter-spacing: 0.78px;
-}
-
-.navigation__logo {
-  font-family: $ff-alumni-sans;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  color: #ffffff;
-  font-size: 36px;
-  letter-spacing: 0.72px;
-  display: block;
 }
