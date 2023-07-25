@@ -23,10 +23,6 @@
   }
 }
 
-// .footer__wrapper a {
-//   font-size: 26px;
-// }
-
 .footer__list-links {
   margin: 0;
   display: flex;
@@ -36,7 +32,6 @@
   column-gap: 40px;
 
   @include vp-1199 {
-    // padding-left: 54px;
     column-gap: 30px;
   }
 
