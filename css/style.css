@@ -1052,7 +1052,7 @@ ul {
   align-self: center;
   margin: 0 auto;
   border-radius: 50px;
-  background: url("../../img/sprite/player-button.svg");
+  background: url("../img/sprite/player-button.svg");
   border: none;
   width: 100px;
   height: 100px;
@@ -1063,15 +1063,15 @@ ul {
 }
 
 .gym__video-play:hover {
-  background: url("../../img/sprite/player-button-hover.svg");
+  background: url("../img/sprite/player-button-hover.svg");
 }
 
 .gym__video-play:active {
-  background: url("../../img/sprite/player-button-active.svg");
+  background: url("../img/sprite/player-button-active.svg");
 }
 
 .gym__video-play:disabled {
-  background: url("../../img/sprite/player-button-disabled.svg");
+  background: url("../img/sprite/player-button-disabled.svg");
 }
 
 /* @mixin hover-focus {
