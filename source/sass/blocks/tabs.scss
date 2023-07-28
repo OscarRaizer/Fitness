@@ -23,6 +23,7 @@
 .tabs__content {
   position: relative;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   gap: 40px;
   z-index: 6;
@@ -30,6 +31,7 @@
   @include vp-1199 {
     flex-direction: column;
     padding: 54px 111px 61px;
+    align-items: center;
   }
 
   @include vp-767 {
