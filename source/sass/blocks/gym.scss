@@ -5,7 +5,7 @@
   gap: 85px;
   justify-content: space-between;
   margin: 120px 0px 235px 60px;
-  color: $sapphire;
+  color: $color-sapphire;
   position: relative;
 
   @include vp-1199 {
@@ -124,7 +124,7 @@
   width: 364px;
   height: 228px;
   background-size: 100%;
-  background-image: linear-gradient($dark-cerulean), url("../img/gym-video.png");
+  background-image: linear-gradient($color-dark-cerulean), url("../img/gym-video.png");
   background-repeat: no-repeat;
   background-position: center;
 
@@ -150,7 +150,7 @@
   align-self: center;
   margin: 0 auto;
   border-radius: 50px;
-  background: url("../../img/sprite/player-button.svg");
+  background: url("../img/sprite/player-button.svg");
   border: none;
   width: 100px;
   height: 100px;
@@ -160,14 +160,14 @@
   }
 
   &:hover {
-    background: url("../../img/sprite/player-button-hover.svg");
+    background: url("../img/sprite/player-button-hover.svg");
   }
 
   &:active {
-    background: url("../../img/sprite/player-button-active.svg");
+    background: url("../img/sprite/player-button-active.svg");
   }
 
   &:disabled {
-    background: url("../../img/sprite/player-button-disabled.svg");
+    background: url("../img/sprite/player-button-disabled.svg");
   }
 }

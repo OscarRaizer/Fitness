@@ -1,26 +1,129 @@
-// .btn {
-//   display: inline-flex;
-//   padding: 10px 20px;
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 56px;
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: $color-default-white;
+  background-color: transparent;
+  border: 4px solid $color-button-border-light;
+  outline: none;
+  cursor: pointer;
+  transition: opacity $trans-default;
 
-//   color: $color-default-white;
+  &:hover,
+  &:focus {
+    background-color: $color-default-background;
+    color: $color-additional-egyptian-blue;
+  }
 
-//   background-color: $color-neon-blue;
-//   border: none;
-//   cursor: pointer;
+  &:active {
+    color: $color-default-black;
+  }
 
-//   transition: opacity $trans-default;
+  &:disabled,
+  &[aria-disabled="true"] {
+    opacity: 0.5;
+    pointer-events: none;
+  }
 
-//   &--red {
-//     background-color: $color-torch-red;
-//   }
+  @include vp-1199 {
+    padding: 18px 32px;
+  }
 
-//   &:disabled {
-//     opacity: 0.5;
+  @include vp-767 {
+    padding: 21px 30px;
+  }
 
-//     pointer-events: none;
-//   }
+  &--memberships {
+    padding: 0 0 14px 0;
+    outline: none;
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(16, 38, 84, 0.5);
+    text-transform: none;
+    position: relative;
 
-//   @include hover-focus {
-//     opacity: 0.8;
-//   }
-// }
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 2px;
+      background-color: #d10a42;
+      opacity: 0;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: $color-default-black;
+      cursor: pointer;
+
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &.is-active {
+      color: $color-default-black;
+      pointer-events: none;
+
+      &::after {
+        opacity: 1;
+      }
+    }
+
+    &:disabled {
+      pointer-events: none;
+      color: $color-default-black;
+      opacity: 0.3;
+    }
+
+    @include vp-1199 {
+      font-size: 18px;
+      letter-spacing: 0.5px;
+    }
+
+    @include vp-767 {
+      font-size: 16px;
+      padding: 0 0 16px;
+    }
+  }
+
+  &--membership {
+    padding: 23px 43px;
+    max-width: 206px;
+    color: $color-default-black;
+    border: 2px solid $color-button-border-dark;
+
+    &:hover:not(:disabled):not([aria-disabled="true"]),
+    &:focus:not(:disabled):not([aria-disabled="true"]) {
+      color: $color-default-white;
+      border: 2px solid $color-button-border-light;
+      background: $color-button-background-gradient;
+    }
+
+    &:active:not(:disabled):not([aria-disabled="true"]) {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    &:disabled,
+    &[aria-disabled="true"] {
+      opacity: 0.3;
+    }
+
+    @include vp-1199 {
+      padding: 23px 42px;
+    }
+  }
+
+}

@@ -1,0 +1,164 @@
+.tabs__controls {
+  display: flex;
+  flex-direction: row;
+  gap: 46px;
+  margin: 0 auto;
+  justify-content: center;
+  margin-bottom: 39px;
+  position: relative;
+  width: fit-content;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $color-whisper;
+    opacity: 1;
+  }
+}
+
+.tabs__content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  z-index: 6;
+
+  @include vp-1199 {
+    flex-direction: column;
+    padding: 54px 111px 61px;
+  }
+
+  @include vp-767 {
+    font-size: 72px;
+    padding: 0;
+  }
+}
+
+
+.tabs__element {
+  padding: 7px;
+  width: 100%;
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    background: $color-button-background-gradient;
+
+    .membership__button:not(:disabled):not([aria-disabled="true"]) {
+      color: $color-default-white;
+      background: $color-button-background-gradient;
+      border: 2px solid transparent;
+
+      &:active {
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+}
+
+.tabs__element-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 58px 0;
+  font-family: $ff-roboto-condensed;
+  color: $color-primary;
+  font-style: normal;
+  background-color: $color-default-white;
+}
+
+.tabs__element-wrapper h3 {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 110.156%;
+  margin: 0;
+  margin-bottom: 22px;
+
+  @include vp-767 {
+    font-size: 22px;
+    padding: 0;
+  }
+}
+
+.tabs__element-wrapper span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.tabs__element-price {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  height: 60px;
+  margin-top: 96px;
+  margin-bottom: 59px;
+
+  span {
+    display: flex;
+    color: $color-additional-egyptian-blue;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    z-index: 2;
+    gap: 14px;
+    width: fit-content;
+
+    @include vp-767 {
+      font-size: 48px;
+      gap: 10px;
+    }
+
+    &::after {
+      content: "";
+      background-image: url("../img/sprite/ruble.svg");
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 42px;
+      margin-top: 7px;
+
+      @include vp-767 {
+        background-image: url("../img/sprite/ruble-mobile.svg");
+        width: 24px;
+        height: 33px;
+      }
+    }
+
+    &:last-child {
+      color: $color-whisper;
+      opacity: 0.47999998927116394;
+      font-family: Roboto Condensed;
+      font-size: 100px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1;
+      margin: 0;
+      margin-top: -110px;
+      z-index: 1;
+
+      @include vp-767 {
+        font-size: 80px;
+        margin-top: -87px;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.tabs__element-wrapper a {
+  display: block;
+}
+
+.tabs__element-button {
+  color: #102654;
+}
