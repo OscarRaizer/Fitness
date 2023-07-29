@@ -1656,6 +1656,198 @@ ul {
   color: #102654;
 }
 
+.super-games .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.75fr 1fr;
+  grid-template-columns: 0.75fr 1fr;
+  padding-top: 120px;
+  padding-bottom: 106px;
+  width: 100%;
+  color: #ffffff;
+}
+@media (max-width: 1199px) {
+  .super-games .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .super-games .container {
+    padding-top: 70px;
+    padding-bottom: 63px;
+    -ms-grid-columns: minmax(290px, 1fr);
+    grid-template-columns: minmax(290px, 1fr);
+  }
+}
+
+.super-games__banner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ED0233;
+  padding: 80px 79px 87px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+}
+@media (max-width: 1199px) {
+  .super-games__banner-wrapper {
+    padding: 51px 45px;
+  }
+}
+@media (max-width: 767px) {
+  .super-games__banner-wrapper {
+    padding: 50px 44px;
+  }
+}
+
+.super-games__banner-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 1199px) {
+  .super-games__banner-info {
+    gap: 29px;
+  }
+}
+.super-games__banner-info h2 {
+  font-family: "Alumni Sans", "Arial", sans-serif;
+  text-align: center;
+  font-size: 82px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 96%;
+  display: inline-block;
+  letter-spacing: 2.46px;
+  margin: 0;
+  text-transform: uppercase;
+  padding-left: 10px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+@media (max-width: 1199px) {
+  .super-games__banner-info h2 {
+    font-size: 48px;
+  }
+}
+.super-games__banner-info dl {
+  margin: 0;
+}
+.super-games__banner-info dt {
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+@media (max-width: 1199px) {
+  .super-games__banner-info dt {
+    font-size: 12px;
+  }
+}
+.super-games__banner-info dd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7px;
+  margin: 0;
+  font-size: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  line-height: 1;
+  position: relative;
+  padding-top: 14px;
+}
+@media (max-width: 1199px) {
+  .super-games__banner-info dd {
+    font-size: 24px;
+  }
+}
+.super-games__banner-info dd::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 5px;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+}
+.super-games__banner-info dd:not(:last-of-type) {
+  margin-bottom: 9px;
+}
+@media (max-width: 1199px) {
+  .super-games__banner-info dd:not(:last-of-type) {
+    margin-bottom: 5px;
+  }
+}
+.super-games__banner-info dd span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (max-width: 1199px) {
+  .super-games__banner-info dd span {
+    font-size: 10px;
+  }
+}
+
+.super-games__image-wrapper {
+  background-color: #102654;
+}
+
+.super-games__banner-description {
+  margin-bottom: 50px;
+  line-height: 1;
+}
+@media (max-width: 1199px) {
+  .super-games__banner-description {
+    margin-bottom: 33px;
+  }
+}
+
+.super-games__banner-description p {
+  margin: 0;
+  font-size: 18px;
+}
+@media (max-width: 1199px) {
+  .super-games__banner-description p {
+    font-size: 12px;
+  }
+}
+
+.super-games__banner-button {
+  font-size: 12px;
+  padding-top: 29px;
+  padding-bottom: 29px;
+}
+@media (max-width: 1199px) {
+  .super-games__banner-button {
+    font-size: 10px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+.super-games__image-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
