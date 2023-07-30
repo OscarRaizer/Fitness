@@ -4,6 +4,7 @@ import { Form } from './modules/form-validate/form';
 import initVideo from './modules/video/video';
 import { initAccordions } from './vendor/init-accordion';
 import { initTabs } from './vendor/init-tabs';
+import initSliders from './vendor';
 
 // ---------------------------------
 
@@ -27,6 +28,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initVideo();
     initAccordions();
     initTabs();
+    initSliders();
   });
 });
 

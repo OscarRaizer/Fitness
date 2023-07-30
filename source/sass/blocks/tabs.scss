@@ -70,7 +70,7 @@
 .tabs__element-wrapper h3 {
   font-size: 26px;
   font-weight: 700;
-  line-height: 110.156%;
+  line-height: 110.16%;
   margin: 0;
   margin-bottom: 22px;
 
@@ -128,8 +128,8 @@
 
     &:last-child {
       color: $color-whisper;
-      opacity: 0.47999998927116394;
-      font-family: Roboto Condensed;
+      opacity: 0.48;
+      font-family: $ff-roboto-condensed;
       font-size: 100px;
       font-style: normal;
       font-weight: 700;

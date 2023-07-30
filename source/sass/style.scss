@@ -3,6 +3,7 @@
 
 @import "vendor/normalize";
 @import "vendor/data-tabs";
+@import "vendor/swiper.scss";
 // Swiper 7.4.1
 // @import "vendor/swiper";
 
@@ -29,7 +30,10 @@
 @import "blocks/gym";
 @import "blocks/membership";
 @import "blocks/tabs";
-@import "blocks/super-games.scss";
+@import "blocks/super-games";
+@import "blocks/trainers";
+@import "blocks/trainer";
+@import "blocks/slider-btn";
 
 // ---------------------------------
 

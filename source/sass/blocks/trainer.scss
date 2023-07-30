@@ -1,0 +1,223 @@
+.trainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  font-family: $ff-roboto-condensed;
+
+  figcaption {
+    width: 100%;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: $color-default-white;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @include vp-1199 {
+    cursor: pointer;
+  }
+}
+
+.trainer__wrapper {
+  position: relative;
+  width: auto;
+  height: auto;
+
+  &:hover,
+  &:focus {
+    figcaption {
+      display: none;
+
+      @include vp-1199 {
+        display: block;
+      }
+    }
+
+    .trainer__info-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 53px 45px 50px 56px;
+      top: 0;
+      left: 0;
+      width: auto;
+      height: 100%;
+      background-color: rgba(16, 38, 84, 0.89);
+      color: $color-default-white;
+
+      @include vp-1199 {
+        display: none;
+      }
+    }
+
+    @include vp-1199 {
+      .trainer__info-wrapper--open {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 53px 45px 53px 56px;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: 100%;
+        background-color: rgba(16, 38, 84, 0.89);
+        color: $color-default-white;
+      }
+    }
+  }
+}
+
+.trainer__info-wrapper {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-right: 10px;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+
+    @include vp-1199 {
+      padding-right: 20px;
+    }
+
+    @include vp-767 {
+      padding-right: 0;
+    }
+  }
+
+  span {
+    margin-top: -5px;
+    margin-bottom: 33px;
+    padding-right: 10px;
+    font-size: 16px;
+    color: #b6bdcc;
+
+    @include vp-1199 {
+      padding-right: 23px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 34px;
+      padding-right: 0;
+    }
+  }
+}
+
+.trainer__info-wrapper--open {
+  @include vp-1199 {
+    .trainer__info-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 53px 45px 53px 56px;
+      top: 0;
+      left: 0;
+      width: auto;
+      height: 100%;
+      background-color: rgba(16, 38, 84, 0.89);
+      color: $color-default-white;
+    }
+
+    &:hover,
+    &:focus {
+      .trainer__info-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 53px 45px 53px 56px;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: 100%;
+        background-color: rgba(16, 38, 84, 0.89);
+        color: $color-default-white;
+      }
+
+      figcaption {
+        display: none;
+      }
+    }
+
+    figcaption {
+      display: none;
+    }
+  }
+
+  @include vp-767 {
+    .trainer__info-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 42px 26px 40px;
+      top: 0;
+      left: 0;
+      width: auto;
+      height: 100%;
+      background-color: rgba(16, 38, 84, 0.89);
+      color: $color-default-white;
+    }
+
+    &:hover {
+      .trainer__info-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 42px 26px 53px 26px;
+        top: 0;
+        left: 0;
+        width: auto;
+        height: 100%;
+        background-color: rgba(16, 38, 84, 0.89);
+        color: $color-default-white;
+      }
+    }
+  }
+}
+
+.trainer__info-list {
+  margin: 0;
+  padding-left: 15px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  font-size: 14px;
+  line-height: 150%;
+
+  @include vp-767 {
+    padding-left: 23px;
+  }
+
+  li {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 7px;
+      left: -15px;
+      content: "";
+      width: 6px;
+      height: 6px;
+      background-color: $color-default-white;
+      border-radius: 6px;
+    }
+  }
+}
