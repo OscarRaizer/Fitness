@@ -1,0 +1,228 @@
+.sales .container {
+  padding-top: 135px;
+  padding-bottom: 120px;
+
+  @include vp-1199 {
+    padding-top: 91px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 63px;
+    padding-bottom: 70px;
+  }
+}
+
+
+.sales h2 {
+  font-family: $ff-alumni-sans;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.62px;
+  color: $color-primary;
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.sales__content-wrapper {
+  display: grid;
+  grid-template-columns: 560px 1fr;
+  gap: 40px;
+  font-family: $ff-roboto-condensed;
+  font-style: normal;
+
+  @include vp-1199 {
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sales__banner-wrapper {
+  display: flex;
+
+  @include vp-1199 {
+    grid-column: 1fr;
+    grid-column: 1 / -1;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+
+.sales__banner-info {
+  background-color: $color-torch-red;
+  color: $color-default-white;
+  padding: 45px;
+
+  @include vp-1199 {
+    width: 70%;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 19px;
+  }
+
+  span {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 140%;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 198px;
+
+    @include vp-767 {
+      margin-bottom: 40px;
+    }
+  }
+
+  a {
+    color: $color-default-white;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $color-default-white;
+    }
+
+    &:hover:not(:disabled):not([aria-disabled="true"]) {
+      opacity: 0.8;
+    }
+  }
+}
+
+
+.sales__banner-photo img {
+  background-color: $color-deep-sky-blue;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  display: block;
+
+  @include vp-1199 {
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+
+.sales__cards-list {
+  font-family: $ff-roboto-condensed;
+  padding: 0;
+  margin: 0;
+  gap: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @include vp-1199 {
+    flex-direction: row;
+    grid-column: 1 / -1;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+
+  li {
+    padding: 7px;
+    background: $color-button-background-gradient;
+    width: 100%;
+
+    @include vp-767 {
+      text-align: center;
+    }
+  }
+
+  div {
+    padding: 28px;
+    background-color: $color-default-white;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+
+    @include vp-767 {
+      padding: 39px;
+    }
+  }
+
+  h3 {
+    margin-bottom: 20px;
+    color: $color-resolution-blue;
+    font-family: Roboto Condensed;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 80px;
+    line-height: 1;
+    color: $color-resolution-blue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+
+    @include vp-767 {
+      margin-bottom: 35px;
+    }
+  }
+
+  a {
+    position: relative;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: $color-resolution-blue;
+
+    &::before {
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $color-resolution-blue;
+
+    }
+
+    &:hover:not(:disabled):not([aria-disabled="true"]) {
+      opacity: 0.8;
+    }
+  }
+}
