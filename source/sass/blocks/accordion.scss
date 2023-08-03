@@ -20,25 +20,24 @@
 
 .accordion__btn {
   margin: 0;
-  background: url("../img/sprite/faq-btn-plus.svg");
+  background: url("../img/sprite/faq-btn-plus.svg") no-repeat;
   background-position: center;
-  background-repeat: no-repeat;
-  min-width: 42px;
-  min-height: 42px;
+  min-width: 43px;
+  min-height: 43px;
   border: 0;
   padding: 0;
   cursor: pointer;
 
   &:hover {
-    background: url("../img/sprite/faq-btn-plus-hover.svg");
+    background: url("../img/sprite/faq-btn-plus-hover.svg") no-repeat;
   }
 
   &:focus {
-    background: url("../img/sprite/faq-btn-minus.svg");
+    background: url("../img/sprite/faq-btn-minus.svg") no-repeat;
   }
 
   &:active {
-    background: url("../img/sprite/faq-btn-minus.svg");
+    background: url("../img/sprite/faq-btn-minus.svg") no-repeat;
   }
 }
 
