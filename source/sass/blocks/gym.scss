@@ -4,7 +4,7 @@
   flex-wrap: nowrap;
   gap: 85px;
   justify-content: space-between;
-  margin: 120px 0px 235px 60px;
+  margin: 120px 0 235px 60px;
   color: $color-sapphire;
   position: relative;
 
@@ -26,7 +26,6 @@
 }
 
 .gym__info {
-
   h2 {
     font-family: $ff-alumni-sans;
     font-size: 48px;

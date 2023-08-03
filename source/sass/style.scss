@@ -3,7 +3,8 @@
 
 @import "vendor/normalize";
 @import "vendor/data-tabs";
-@import "vendor/swiper.scss";
+@import "vendor/swiper";
+@import "vendor/data-accordion";
 // Swiper 7.4.1
 // @import "vendor/swiper";
 
@@ -35,7 +36,9 @@
 @import "blocks/trainer";
 @import "blocks/slider-btn";
 @import "blocks/advantages";
-@import "blocks/sales.scss";
+@import "blocks/sales";
+@import "blocks/faq";
+@import "blocks/accordion";
 
 // ---------------------------------
 

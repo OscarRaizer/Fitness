@@ -1,0 +1,62 @@
+.accordion__element {
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(28, 51, 116, 0.2);
+}
+
+.accordion__title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  color: $color-sapphire;
+
+  h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+  }
+}
+
+.accordion__btn {
+  margin: 0;
+  background: url("../img/sprite/faq-btn-plus.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  min-width: 42px;
+  min-height: 42px;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+
+  &:hover {
+    background: url("../img/sprite/faq-btn-plus-hover.svg");
+  }
+
+  &:focus {
+    background: url("../img/sprite/faq-btn-minus.svg");
+  }
+
+  &:active {
+    background: url("../img/sprite/faq-btn-minus.svg");
+  }
+}
+
+.accordion__element .is-active .accordion__btn {
+  background: url("../img/sprite/faq-btn-minus.svg");
+}
+
+.accordion__content {
+  overflow: hidden;
+  color: $color-sapphire;
+
+  p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%;
+    margin: 0;
+    margin-top: 14px;
+    padding-right: 150px;
+  }
+}

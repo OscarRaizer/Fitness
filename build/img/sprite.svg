@@ -7,7 +7,16 @@
 <stop stop-color="#ED0233"/>
 <stop offset="1" stop-color="#003EB7"/>
 </linearGradient>
-</defs><symbol id="icon-arrow" viewBox="0 0 18 34"><g fill="none">
+</defs><symbol id="faq-btn-minus" viewBox="0 0 42 42"><g fill="none">
+<circle cx="21" cy="21" r="20.5" fill="#102654" stroke="#102654"/>
+<path d="M30 21H21H12" stroke="white"/>
+</g></symbol><symbol id="faq-btn-plus-hover" viewBox="0 0 42 42"><g fill="none">
+<circle cx="21" cy="21" r="21" fill="#102654"/>
+<path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="white"/>
+</g></symbol><symbol id="faq-btn-plus" viewBox="0 0 42 42"><g fill="none">
+<circle cx="21" cy="21" r="20.5" stroke="#1C3374"/>
+<path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="#1C3374"/>
+</g></symbol><symbol id="icon-arrow" viewBox="0 0 18 34"><g fill="none">
 <path d="M17 1L0.999999 17L17 33" stroke="#AFAFAF"/>
 </g></symbol><symbol id="ok" viewBox="0 0 25 25"><g fill="none">
 <path d="M12.5 0C5.59692 0 0 5.59692 0 12.5C0 19.4031 5.59692 25 12.5 25C19.4031 25 25 19.4031 25 12.5C25 5.59692 19.4031 0 12.5 0Z" fill="white"/>

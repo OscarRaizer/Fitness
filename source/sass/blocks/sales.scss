@@ -47,7 +47,7 @@
   display: flex;
 
   @include vp-1199 {
-    grid-column: 1fr;
+    // grid-column: 1fr;
     grid-column: 1 / -1;
   }
 
@@ -179,7 +179,7 @@
   h3 {
     margin-bottom: 20px;
     color: $color-resolution-blue;
-    font-family: Roboto Condensed;
+    font-family: $ff-roboto-condensed;
     font-size: 26px;
     font-style: normal;
     font-weight: 700;
@@ -218,7 +218,6 @@
       width: 100%;
       height: 1px;
       background-color: $color-resolution-blue;
-
     }
 
     &:hover:not(:disabled):not([aria-disabled="true"]) {
