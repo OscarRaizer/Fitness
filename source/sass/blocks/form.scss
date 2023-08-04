@@ -1,0 +1,124 @@
+.form-and-contacts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+.form {
+  color: $color-default-white;
+  height: 100%;
+
+
+  .container {
+    padding: 56px 170px 70px 103px;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-sapphire;
+    height: 337px;
+
+    @include vp-767 {
+      padding: 70px 15px;
+    }
+  }
+
+  h2 {
+    font-family: $ff-alumni-sans;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 156%;
+    letter-spacing: 1.62px;
+    margin-bottom: 10px;
+
+    @include vp-1199 {
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 1.26px;
+    }
+  }
+}
+
+.form__wrapper form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.form__field input {
+  position: relative;
+  max-width: 100%;
+  padding: 5px;
+  font-family: $ff-roboto-condensed;
+  font-size: 14px;
+  line-height: normal;
+  background-color: transparent;
+  color: $color-default-white;
+  outline: none;
+  border: 1px solid transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+  &::placeholder,
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder {
+    color: $color-default-white;
+    position: absolute;
+    left: 0;
+  }
+
+  &:not(:disabled):hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+  }
+
+  &:not(:disabled):focus,
+  &:not(:disabled):active {
+    &::placeholder {
+      opacity: 0;
+    }
+
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+
+  &:disabled {
+    opacity: 0.4;
+  }
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+
+  &.is-invalid {
+    font-family: $ff-roboto-condensed;
+    font-size: 14px;
+    line-height: 22px;
+    color: $color-form-error;
+
+    input,
+    input:hover,
+    input:focus {
+      border-bottom: 1px solid $color-form-error;
+    }
+
+    .is-invalid {
+      max-width: 100%;
+    }
+  }
+
+  &:last-of-type {
+    @include vp-767 {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.form__button {
+  grid-column: 1 / -1;
+}

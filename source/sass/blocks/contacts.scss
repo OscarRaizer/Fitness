@@ -1,0 +1,100 @@
+.contacts {
+  background-color: #ffffff;
+  height: 100%;
+
+  .container {
+    padding: 56px 159px 70px 120px;
+    height: 337px;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid $color-light-slate-grey;
+
+    @include vp-767 {
+      height: 100%;
+      padding: 70px 19px;
+    }
+  }
+
+  h2 {
+    color: $color-primary;
+    font-family: $ff-alumni-sans;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.62px;
+    margin-bottom: 10px;
+
+    @include vp-1199 {
+      font-size: 42px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 1.26px;
+    }
+  }
+}
+
+.contacts__info-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: $color-primary;
+  font-family: Roboto Condensed;
+  gap: 120px;
+  height: auto;
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    gap: 0;
+    height: 100%;
+  }
+
+  dt {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+
+    @include vp-1199 {
+      font-size: 20px;
+    }
+  }
+
+
+  dd {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 152.344%;
+    margin: 0;
+
+    @include vp-1199 {
+      font-size: 18px;
+    }
+  }
+}
+
+.contacts__inner-wrapper {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: -60px;
+
+    &::before {
+      position: absolute;
+      right: 0;
+      content: "";
+      width: 1px;
+      height: 100%;
+      background-color: $color-light-slate-grey;
+
+      @include vp-767 {
+        content: none;
+      }
+    }
+
+    @include vp-1199 {
+      margin-right: -12px;
+    }
+  }
+}
