@@ -4,6 +4,15 @@
   letter-spacing: 0.72px;
   line-height: 1;
 
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
   @include vp-1199 {
     font-size: 24px;
     letter-spacing: 0.48px;

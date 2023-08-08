@@ -155,11 +155,8 @@
   height: 100px;
 
   &:hover {
-    cursor: pointer;
-  }
-
-  &:hover {
     background: url("../img/sprite/player-button-hover.svg");
+    cursor: pointer;
   }
 
   &:active {

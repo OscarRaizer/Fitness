@@ -54,6 +54,12 @@
   }
 }
 
+.tabs__element:hover a {
+  background: $color-button-background-gradient;
+  color: $color-default-white;
+}
+
+
 .tabs__element-wrapper {
   display: flex;
   flex-direction: column;
@@ -65,6 +71,11 @@
   color: $color-primary;
   font-style: normal;
   background-color: $color-default-white;
+  // background-color: transparent;
+
+  &:hover {
+    background-color: $color-default-white;
+  }
 }
 
 .tabs__element-wrapper h3 {
@@ -152,8 +163,4 @@
 
 .tabs__element-wrapper a {
   display: block;
-}
-
-.tabs__element-button {
-  color: #102654;
 }

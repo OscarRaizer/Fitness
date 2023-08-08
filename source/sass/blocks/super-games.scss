@@ -1,7 +1,7 @@
 .super-games .container {
   display: grid;
   grid-template-columns: 0.75fr 1fr;
-  padding-top: 120px;
+  padding-top: 96px;
   padding-bottom: 106px;
   width: 100%;
   color: $color-default-white;
@@ -23,7 +23,7 @@
   flex-direction: column;
   justify-content: center;
   background-color: $color-torch-red;
-  padding: 80px 79px 87px;
+  padding: 80px 79px 55px;
   font-family: $ff-roboto-condensed;
 
   @include vp-1199 {
@@ -39,7 +39,7 @@
   display: flex;
   justify-content: space-between;
   gap: 50px;
-  margin-bottom: 10px;
+  margin-bottom: 34px;
   align-items: center;
 
   @include vp-1199 {
@@ -52,12 +52,12 @@
     font-size: 82px;
     font-style: normal;
     font-weight: 600;
-    line-height: 96%;
+    line-height: 107%;
     display: inline-block;
-    letter-spacing: 2.46px;
+    letter-spacing: 6.46px;
     margin: 0;
     text-transform: uppercase;
-    padding-left: 10px;
+    padding-left: 22px;
     width: min-content;
 
     @include vp-1199 {
@@ -67,6 +67,7 @@
 
   dl {
     margin: 0;
+    margin-right: 22px;
   }
 
   dt {
@@ -129,7 +130,11 @@
 
 .super-games__banner-description {
   margin-bottom: 50px;
-  line-height: 1;
+
+  p {
+    line-height: 1;
+    letter-spacing: 1.2px;
+  }
 
   @include vp-1199 {
     margin-bottom: 33px;

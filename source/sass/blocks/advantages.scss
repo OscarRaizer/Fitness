@@ -43,7 +43,7 @@
 .advantages ul {
   display: grid;
   grid-template-columns: 340px 240px 340px;
-  gap: 80px 60px;
+  gap: 70px 56px;
   margin: 0;
   padding: 0;
 
@@ -89,10 +89,17 @@
 .advantages__item {
   display: flex;
   font-family: $ff-roboto-condensed;
-  padding-left: 20px;
   padding-bottom: 75px;
   gap: 30px;
   align-items: center;
+
+  &:nth-child(3) {
+    padding-left: 5px;
+  }
+
+  &:nth-child(5) {
+    padding-left: 5px;
+  }
 
   @include vp-1199 {
     padding-bottom: 0;

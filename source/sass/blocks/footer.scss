@@ -23,6 +23,15 @@
   }
 }
 
+.footer__logo {
+  display: block;
+
+  @include vp-767 {
+    margin-top: 15px;
+  }
+
+}
+
 .footer__list-links {
   margin: 0;
   display: flex;
@@ -113,11 +122,13 @@
   background-color: $color-default-white;
   border: none;
   cursor: pointer;
+  fill: #000000;
+  padding: 6px;
 
   &:hover,
   &:focus-visible {
-    // background-color: $color-persian-blue;
-    fill: $color-default-white;
+    background-color: $color-additional-egyptian-blue;
+    fill: #ffffff;
     outline: none;
   }
 
