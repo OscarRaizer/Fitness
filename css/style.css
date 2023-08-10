@@ -1691,15 +1691,15 @@ h5 {
   opacity: 0.3;
 }
 
+.header {
+  padding-top: 30px;
+}
+
 .header-and-hero-wrapper {
   height: 658px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   background: conic-gradient(from 90deg at 16.03% 39.06%, #b80027, #003d85 62deg, #b80027 335deg);
-}
-
-.header {
-  padding-top: 30px;
 }
 
 .navigation {
@@ -2442,9 +2442,6 @@ h5 {
 .super-games__banner-description p {
   line-height: 1;
   letter-spacing: 1.2px;
-}
-
-.super-games__banner-description p {
   margin: 0;
   font-size: 18px;
 }
@@ -2601,24 +2598,7 @@ h5 {
   width: 0;
 }
 
-.trainer__info-wrapper h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-right: 10px;
-  font-size: 18px;
-  line-height: 150%;
-  text-align: center;
-}
-
-.trainer__info-wrapper span {
-  margin-top: -5px;
-  margin-bottom: 33px;
-  padding-right: 10px;
-  font-size: 16px;
-  color: #b6bdcc;
-}
-
-.trainer__info-list {
+.trainer__info-wrapper ul {
   margin: 0;
   padding-left: 15px;
   list-style: none;
@@ -2634,11 +2614,11 @@ h5 {
   line-height: 150%;
 }
 
-.trainer__info-list li {
+.trainer__info-wrapper ul li {
   position: relative;
 }
 
-.trainer__info-list li::before {
+.trainer__info-wrapper ul li::before {
   position: absolute;
   top: 7px;
   left: -15px;
@@ -2647,6 +2627,23 @@ h5 {
   height: 6px;
   background-color: #ffffff;
   border-radius: 6px;
+}
+
+.trainer__info-wrapper h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 10px;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.trainer__info-wrapper span {
+  margin-top: -5px;
+  margin-bottom: 33px;
+  padding-right: 10px;
+  font-size: 16px;
+  color: #b6bdcc;
 }
 
 .slider-btn {
@@ -2665,6 +2662,7 @@ h5 {
   outline: none;
   border-radius: 50%;
   cursor: pointer;
+  background-color: transparent;
 }
 
 .slider-btn:hover,
@@ -2717,8 +2715,8 @@ h5 {
 .advantages ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 340px 240px 340px;
-  grid-template-columns: 340px 240px 340px;
+  -ms-grid-columns: 326px 248px 339px;
+  grid-template-columns: 326px 248px 339px;
   gap: 70px 56px;
   margin: 0;
   padding: 0;
@@ -2764,14 +2762,6 @@ h5 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.advantages__item:nth-child(3) {
-  padding-left: 5px;
-}
-
-.advantages__item:nth-child(5) {
-  padding-left: 5px;
 }
 
 .advantages__item:nth-last-child(1n+3) {
@@ -3114,6 +3104,10 @@ h5 {
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 }
 
+.accordion__element.is-active .accordion__btn {
+  background: url("../img/sprite/faq-btn-minus.svg");
+}
+
 .accordion__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3154,10 +3148,6 @@ h5 {
 
 .accordion__btn:active {
   background: url("../img/sprite/faq-btn-minus.svg") no-repeat;
-}
-
-.accordion__element .is-active .accordion__btn {
-  background: url("../img/sprite/faq-btn-minus.svg");
 }
 
 .accordion__content {
@@ -3295,14 +3285,6 @@ h5 {
   margin-top: 7px;
 }
 
-.form-and-contacts {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-  grid-template-columns: repeat(2, 1fr);
-  height: 100%;
-}
-
 .form {
   color: #ffffff;
   height: 100%;
@@ -3434,6 +3416,14 @@ h5 {
 
 .form__button {
   grid-column: 1/-1;
+}
+
+.form-and-contacts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
 }
 
 .contacts {
@@ -3737,12 +3727,12 @@ h5 {
     font-size: 10px;
   }
 
-  .super-games__banner-description {
-    margin-bottom: 33px;
-  }
-
   .super-games__banner-description p {
     font-size: 12px;
+  }
+
+  .super-games__banner-description {
+    margin-bottom: 33px;
   }
 
   .super-games__banner-button {
@@ -4018,17 +4008,17 @@ h5 {
     padding: 55px 66px;
   }
 
-  .form-and-contacts {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-
   .form h2 {
     font-size: 42px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.26px;
+  }
+
+  .form-and-contacts {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .contacts h2 {
@@ -4254,6 +4244,10 @@ h5 {
     left: -45px;
   }
 
+  .trainer__info-wrapper ul {
+    padding-left: 23px;
+  }
+
   .trainer__info-wrapper h3 {
     padding-right: 0;
   }
@@ -4301,10 +4295,6 @@ h5 {
     height: 100%;
     background-color: rgba(16, 38, 84, 0.89);
     color: #ffffff;
-  }
-
-  .trainer__info-list {
-    padding-left: 23px;
   }
 
   .slider-btn .slider-btn__icon {
