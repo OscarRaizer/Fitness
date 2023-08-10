@@ -1,9 +1,9 @@
-import { iosVhFix } from './utils/ios-vh-fix';
-import { initModals } from './modules/modals/init-modals';
-import { Form } from './modules/form-validate/form';
+import {iosVhFix} from './utils/ios-vh-fix';
+import {initModals} from './modules/modals/init-modals';
+import {Form} from './modules/form-validate/form';
 import initVideo from './modules/video/video';
-import { initAccordions } from './vendor/init-accordion';
-import { initTabs } from './vendor/init-tabs';
+import {initAccordions} from './vendor/init-accordion';
+import {initTabs} from './vendor/init-tabs';
 import initSliders from './vendor';
 
 // ---------------------------------

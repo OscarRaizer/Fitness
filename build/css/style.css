@@ -1604,13 +1604,6 @@ h5 {
   }
 }
 
-.header-and-hero-wrapper {
-  height: 658px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  background: conic-gradient(from 90deg at 16.03% 39.06%, #b80027, #003d85 62deg, #b80027 335deg);
-}
-
 .header {
   padding-top: 30px;
 }
@@ -1623,6 +1616,13 @@ h5 {
   .header {
     padding-top: 15px;
   }
+}
+
+.header-and-hero-wrapper {
+  height: 658px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background: conic-gradient(from 90deg at 16.03% 39.06%, #b80027, #003d85 62deg, #b80027 335deg);
 }
 
 .navigation {
@@ -2706,20 +2706,17 @@ h5 {
 .super-games__banner-description p {
   line-height: 1;
   letter-spacing: 1.2px;
-}
-@media (max-width: 1199px) {
-  .super-games__banner-description {
-    margin-bottom: 33px;
-  }
-}
-
-.super-games__banner-description p {
   margin: 0;
   font-size: 18px;
 }
 @media (max-width: 1199px) {
   .super-games__banner-description p {
     font-size: 12px;
+  }
+}
+@media (max-width: 1199px) {
+  .super-games__banner-description {
+    margin-bottom: 33px;
   }
 }
 
@@ -2975,6 +2972,39 @@ h5 {
 .trainer__info-wrapper::-webkit-scrollbar {
   width: 0;
 }
+.trainer__info-wrapper ul {
+  margin: 0;
+  padding-left: 15px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 13px;
+  font-size: 14px;
+  line-height: 150%;
+}
+@media (max-width: 767px) {
+  .trainer__info-wrapper ul {
+    padding-left: 23px;
+  }
+}
+.trainer__info-wrapper ul li {
+  position: relative;
+}
+.trainer__info-wrapper ul li::before {
+  position: absolute;
+  top: 7px;
+  left: -15px;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 6px;
+}
 .trainer__info-wrapper h3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -3099,40 +3129,6 @@ h5 {
   }
 }
 
-.trainer__info-list {
-  margin: 0;
-  padding-left: 15px;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 13px;
-  font-size: 14px;
-  line-height: 150%;
-}
-@media (max-width: 767px) {
-  .trainer__info-list {
-    padding-left: 23px;
-  }
-}
-.trainer__info-list li {
-  position: relative;
-}
-.trainer__info-list li::before {
-  position: absolute;
-  top: 7px;
-  left: -15px;
-  content: "";
-  width: 6px;
-  height: 6px;
-  background-color: #ffffff;
-  border-radius: 6px;
-}
-
 .slider-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3149,6 +3145,7 @@ h5 {
   outline: none;
   border-radius: 50%;
   cursor: pointer;
+  background-color: transparent;
 }
 .slider-btn:hover, .slider-btn:focus {
   outline: 1px solid #102654;
@@ -3234,8 +3231,8 @@ h5 {
 .advantages ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 340px 240px 340px;
-  grid-template-columns: 340px 240px 340px;
+  -ms-grid-columns: 326px 248px 339px;
+  grid-template-columns: 326px 248px 339px;
   gap: 70px 56px;
   margin: 0;
   padding: 0;
@@ -3298,12 +3295,6 @@ h5 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.advantages__item:nth-child(3) {
-  padding-left: 5px;
-}
-.advantages__item:nth-child(5) {
-  padding-left: 5px;
 }
 @media (max-width: 1199px) {
   .advantages__item {
@@ -3830,6 +3821,9 @@ h5 {
   padding: 25px 0;
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 }
+.accordion__element.is-active .accordion__btn {
+  background: url("../img/sprite/faq-btn-minus.svg");
+}
 
 .accordion__title {
   display: -webkit-box;
@@ -3867,10 +3861,6 @@ h5 {
 }
 .accordion__btn:active {
   background: url("../img/sprite/faq-btn-minus.svg") no-repeat;
-}
-
-.accordion__element .is-active .accordion__btn {
-  background: url("../img/sprite/faq-btn-minus.svg");
 }
 
 .accordion__content {
@@ -4113,20 +4103,6 @@ h5 {
   }
 }
 
-.form-and-contacts {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-  grid-template-columns: repeat(2, 1fr);
-  height: 100%;
-}
-@media (max-width: 1199px) {
-  .form-and-contacts {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
-}
-
 .form {
   color: #ffffff;
   height: 100%;
@@ -4254,6 +4230,20 @@ h5 {
 
 .form__button {
   grid-column: 1/-1;
+}
+
+.form-and-contacts {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+}
+@media (max-width: 1199px) {
+  .form-and-contacts {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 
 .contacts {

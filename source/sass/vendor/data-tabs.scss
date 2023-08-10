@@ -2,7 +2,6 @@
   overflow: hidden;
 
   &.no-transition {
-
     >[data-tabs="control"],
     >[data-tabs="content"],
     >[data-tabs="element"] {
@@ -11,7 +10,6 @@
   }
 
   &.no-transition-global {
-
     [data-tabs="control"],
     [data-tabs="content"],
     [data-tabs="element"] {

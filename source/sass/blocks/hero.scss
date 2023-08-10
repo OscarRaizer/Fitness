@@ -155,7 +155,6 @@
 }
 
 .hero__photo-wrapper {
-
   @include vp-767 {
     display: none;
   }

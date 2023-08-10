@@ -1,0 +1,9 @@
+.form-and-contacts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+  }
+}

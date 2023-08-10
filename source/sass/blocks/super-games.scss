@@ -134,6 +134,12 @@
   p {
     line-height: 1;
     letter-spacing: 1.2px;
+    margin: 0;
+    font-size: 18px;
+
+    @include vp-1199 {
+      font-size: 12px;
+    }
   }
 
   @include vp-1199 {
@@ -141,14 +147,6 @@
   }
 }
 
-.super-games__banner-description p {
-  margin: 0;
-  font-size: 18px;
-
-  @include vp-1199 {
-    font-size: 12px;
-  }
-}
 
 .super-games__banner-button {
   font-size: 12px;

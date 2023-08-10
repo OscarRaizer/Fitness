@@ -1,6 +1,10 @@
 .accordion__element {
   padding: 25px 0;
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
+
+  &.is-active .accordion__btn {
+    background: url("../img/sprite/faq-btn-minus.svg");
+  }
 }
 
 .accordion__title {
@@ -41,9 +45,6 @@
   }
 }
 
-.accordion__element .is-active .accordion__btn {
-  background: url("../img/sprite/faq-btn-minus.svg");
-}
 
 .accordion__content {
   overflow: hidden;
