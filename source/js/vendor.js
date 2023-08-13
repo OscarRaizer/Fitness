@@ -1,8 +1,7 @@
 // Swiper 7.4.1
-import swiper from './vendor/swiper';
+import Swiper from './vendor/swiper';
 
 function initSliders() {
-  swiper();
 
   const trainersSlider = new Swiper('.trainers__items', {
     direction: 'horizontal',
@@ -33,6 +32,8 @@ function initSliders() {
     },
   });
 
+  trainersSlider.init();
+
   const trainers = document.querySelectorAll('.trainer');
   if (trainers) {
     trainers.forEach((trainer) => {
@@ -54,6 +55,9 @@ function initSliders() {
     },
     grabCursor: true,
   });
+
+  reviewsSlider.init();
 }
+
 
 export default initSliders;
