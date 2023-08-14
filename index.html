@@ -81,7 +81,21 @@
           </div>
           <div class="gym__promo-wrapper">
             <div class="gym__photo-wrapper">
-              <img class="gym__photo" src="img/gym.png" alt="gym photo" width="660" height="401">
+              <picture>
+                <source media="(max-width: 767px)" type="image/webp"
+                  srcset="img/gym-image-mobile@1x.webp 1x, img/gym-image-mobile@2x.webp 2x" width="320" height="313">
+                <source media="(max-width: 1199px)" type="image/webp"
+                  srcset="img/gym-image-tablet@1x.webp 1x, img/gym-image-tablet@2x.webp 2x" width="678" height="345">
+                <source type="image/webp" srcset="img/gym-image-desktop@1x.webp 1x, img/gym-image-desktop@2x.webp 2x"
+                  width="660" height="401">
+                <source media="(max-width: 767px)"
+                  srcset="img/gym-image-mobile@1x.jpg 1x, img/gym-image-mobile@2x.jpg 2x" width="320" height="313">
+                <source media="(max-width: 1199px)"
+                  srcset="img/gym-image-tablet@1x.jpg 1x, img/gym-image-tablet@2x.jpg 2x" width="678" height="345">
+                <img class="gym__photo" src="img/gym-image-desktop@1x.jpg"
+                  srcset="img/gym-image-desktop@1x.jpg 1x, img/gym-image-desktop@1x.jpg 2x" width="660" height="401"
+                  alt="Тренажёрный зал.">
+              </picture>
             </div>
             <div class="gym__video-wrapper">
               <div class="gym__video" data-src="https://www.youtube-nocookie.com/embed/9TZXsZItgdw?autoplay=1">
