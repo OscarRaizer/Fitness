@@ -7,6 +7,7 @@
   margin-bottom: 39px;
   position: relative;
   width: fit-content;
+  flex-wrap: wrap;
 
   &::after {
     content: "";
@@ -23,13 +24,17 @@
 .tabs__content {
   position: relative;
   z-index: 6;
+
 }
 
 .tabs__element-main {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  // width: fit-content;
   gap: 40px;
+  flex-wrap: wrap;
 
   @include vp-1199 {
     flex-direction: column;
@@ -45,7 +50,7 @@
 
 .tabs__element {
   padding: 7px;
-  width: 100%;
+  // width: 100%;
 
   &:hover,
   &:focus,
@@ -66,12 +71,21 @@
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  padding: 61px 0;
+  padding: 50px 70px;
   font-family: $ff-roboto-condensed;
   color: $color-primary;
   font-style: normal;
   background-color: $color-default-white;
-  // background-color: transparent;
+
+  @include vp-1199 {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  @include vp-767 {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
 
   &:hover {
     background-color: $color-default-white;
@@ -83,7 +97,7 @@
   font-weight: 700;
   line-height: 110.16%;
   margin: 0;
-  margin-bottom: 22px;
+  margin-bottom: 10px;
 
   @include vp-767 {
     font-size: 22px;
@@ -103,7 +117,7 @@
   text-align: center;
   align-items: center;
   height: 60px;
-  margin-top: 90px;
+  margin-top: 76px;
   margin-bottom: 55px;
 
   span {

@@ -14,11 +14,13 @@
   text-align: left;
   color: $color-sapphire;
 
+
   h3 {
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
     line-height: 120%;
+    margin-top: 10px;
   }
 }
 
@@ -31,6 +33,7 @@
   border: 0;
   padding: 0;
   cursor: pointer;
+  margin-right: 28px;
 
   &:hover {
     background: url("../img/sprite/faq-btn-plus-hover.svg") no-repeat;
@@ -38,6 +41,7 @@
 
   &:focus {
     background: url("../img/sprite/faq-btn-minus.svg") no-repeat;
+    outline: none;
   }
 
   &:active {

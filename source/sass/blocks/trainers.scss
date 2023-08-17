@@ -2,7 +2,7 @@
   background-color: $color-default-background;
 
   .container {
-    padding: 0 105px 105px;
+    padding: 15px 105px 105px;
 
     @include vp-1199 {
       padding: 0 101px 100px;
@@ -26,8 +26,9 @@
   margin-bottom: 49px;
   font-weight: 600;
   font-size: 54px;
-  line-height: normal;
+  line-height: 1;
   letter-spacing: 1.62px;
+  color: $color-sapphire;
 
   @include vp-1199 {
     margin-bottom: 30px;
@@ -46,6 +47,7 @@
 .trainers__slider {
   position: relative;
   margin: 0 auto;
+  max-width: 1156px;
 
   @media (max-width: 1329px) {
     max-width: 800px;

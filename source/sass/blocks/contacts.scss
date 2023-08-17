@@ -4,7 +4,6 @@
 
   .container {
     padding: 56px 159px 70px 120px;
-    height: 337px;
     display: flex;
     flex-direction: column;
     border-top: 1px solid $color-light-slate-grey;
@@ -40,7 +39,6 @@
   grid-template-columns: repeat(2, 1fr);
   color: $color-primary;
   font-family: $ff-roboto-condensed;
-  gap: 120px;
   height: auto;
 
   @include vp-767 {
@@ -77,12 +75,20 @@
 .contacts__inner-wrapper {
   position: relative;
 
+  &:last-child {
+    padding-left: 96px;
+
+    @include vp-1199 {
+      padding-left: 0;
+    }
+  }
+
   &:not(:last-child) {
     margin-right: -60px;
 
     &::before {
       position: absolute;
-      right: 0;
+      right: 21px;
       content: "";
       width: 1px;
       height: 100%;

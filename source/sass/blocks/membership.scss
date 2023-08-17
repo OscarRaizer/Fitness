@@ -1,8 +1,9 @@
 .membership {
   background-color: $color-additional-white;
   width: 100%;
-  padding: 120px 103px;
+  padding: 100px 103px;
   position: relative;
+  overflow: visible;
 
   @include vp-1199 {
     padding: 0 45px;
@@ -21,7 +22,8 @@
     bottom: 0;
     background-image: url("../img/membership-element.png");
     background-repeat: no-repeat;
-    overflow: hidden;
+    overflow: visible;
+    // overflow: hidden;
 
     @include vp-1199 {
       background-image: url("../img/membership-element-tablet.png");

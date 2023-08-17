@@ -2,7 +2,7 @@
   background-color: $color-default-background;
 
   .container {
-    padding: 120px 340px;
+    padding: 125px 340px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,6 +17,7 @@
   }
 
   h2 {
+    color: $color-sapphire;
     margin-top: 0;
     margin-bottom: 36px;
     font-weight: 600;

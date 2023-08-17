@@ -1,8 +1,6 @@
 .logo {
-  color: #ffffff;
-  font-size: 36px;
-  letter-spacing: 0.72px;
-  line-height: 1;
+  display: block;
+  height: 100%;
 
   &:hover,
   &:focus {
@@ -14,12 +12,24 @@
   }
 
   @include vp-1199 {
-    font-size: 24px;
-    letter-spacing: 0.48px;
+    width: 82px;
+    height: 17px;
   }
 
   @include vp-767 {
-    font-size: 20px;
-    letter-spacing: 0.4px;
+    width: 82px;
+    height: 17px;
+  }
+
+  img {
+    @include vp-1199 {
+      width: 82px;
+      height: 17px;
+    }
+
+    @include vp-767 {
+      width: 82px;
+      height: 17px;
+    }
   }
 }

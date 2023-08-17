@@ -1,5 +1,13 @@
 .header-and-hero-wrapper {
-  height: 658px;
+  padding-bottom: 51px;
   flex-shrink: 0;
   background: $conic-gradient;
+
+  @include vp-1199 {
+    padding-bottom: 82px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 80px;
+  }
 }

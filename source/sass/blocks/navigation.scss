@@ -1,6 +1,7 @@
 .navigation {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .navigation__logo {
@@ -16,6 +17,9 @@
   line-height: 1;
   align-items: center;
   text-align: center;
+  display: block;
+  height: 100%;
+  margin-bottom: 4px;
 
   &:hover,
   &:focus {
@@ -34,6 +38,8 @@
   font-style: normal;
   font-weight: 600;
   line-height: 1;
+  min-width: fit-content;
+  margin-top: -5px;
 
   @include vp-1199 {
     font-size: 24px;

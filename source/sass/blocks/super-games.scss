@@ -1,7 +1,7 @@
 .super-games .container {
   display: grid;
   grid-template-columns: 0.75fr 1fr;
-  padding-top: 96px;
+  padding-top: 147px;
   padding-bottom: 106px;
   width: 100%;
   color: $color-default-white;
@@ -23,7 +23,7 @@
   flex-direction: column;
   justify-content: center;
   background-color: $color-torch-red;
-  padding: 80px 79px 55px;
+  padding: 80px 60px 55px;
   font-family: $ff-roboto-condensed;
 
   @include vp-1199 {
@@ -68,6 +68,10 @@
   dl {
     margin: 0;
     margin-right: 22px;
+
+    @include vp-1199 {
+      margin-right: auto;
+    }
   }
 
   dt {
@@ -163,4 +167,6 @@
 .super-games__image-wrapper img {
   width: 100%;
   height: 100%;
+  background-color: $color-primary;
+  object-fit: contain;
 }

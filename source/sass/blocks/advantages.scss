@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   background-color: $color-additional-background;
-  padding-top: 108px;
+  padding-top: 118px;
   padding-bottom: 129px;
 
   @include vp-1199 {
@@ -73,6 +73,7 @@
     background-image: $color-additional-gradient;
     color: transparent;
     background-clip: text;
+    margin-top: -20px;
 
     @include vp-1199 {
       font-size: 58px;
@@ -163,8 +164,6 @@
   background-color: $color-resolution-blue;
   color: $color-default-white;
   padding: 66px 34px;
-  max-height: 307px;
-
 
   @include vp-1199 {
     grid-column: 1 / -1;

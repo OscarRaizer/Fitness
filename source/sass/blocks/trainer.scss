@@ -30,6 +30,10 @@
   width: auto;
   height: auto;
 
+  img {
+    background-color: $color-dark-cerulean;
+  }
+
   &:hover,
   &:focus {
     figcaption {

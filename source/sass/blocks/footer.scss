@@ -34,8 +34,8 @@
 .footer__list-links {
   margin: 0;
   display: flex;
-  flex-wrap: nowrap;
-  max-width: 500px;
+  flex-wrap: wrap;
+  max-width: 70%;
   list-style-type: none;
   column-gap: 40px;
 
@@ -103,12 +103,18 @@
   display: flex;
   list-style-type: none;
   gap: 11px;
+  max-width: 150px;
+  flex-wrap: wrap;
 
   @include vp-767 {
     padding: 0;
     justify-content: start;
     column-span: all;
   }
+
+  // :nth-child(even) .footer__social-link {
+  //   padding: 8px;
+  // }
 }
 
 .footer__social-link {
@@ -123,6 +129,10 @@
   cursor: pointer;
   fill: #000000;
   padding: 6px;
+
+  svg {
+    display: block;
+  }
 
   &:hover,
   &:focus-visible {

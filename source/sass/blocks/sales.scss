@@ -1,5 +1,5 @@
 .sales .container {
-  padding-top: 135px;
+  padding-top: 125px;
   padding-bottom: 120px;
 
   @include vp-1199 {
@@ -23,7 +23,7 @@
   letter-spacing: 1.62px;
   color: $color-primary;
   text-align: center;
-  margin-bottom: 34px;
+  margin-bottom: 26px;
 }
 
 .sales__content-wrapper {
@@ -45,9 +45,9 @@
 
 .sales__banner-wrapper {
   display: flex;
+  height: fit-content;
 
   @include vp-1199 {
-    // grid-column: 1fr;
     grid-column: 1 / -1;
   }
 
@@ -61,6 +61,7 @@
   background-color: $color-torch-red;
   color: $color-default-white;
   padding: 45px;
+  width: 50%;
 
   @include vp-1199 {
     width: 70%;
@@ -75,13 +76,15 @@
     font-size: 28px;
     font-weight: 700;
     line-height: 1;
-    margin-bottom: 19px;
+    margin-top: -8px;
   }
 
   span {
     font-size: 70px;
     font-weight: 700;
     line-height: 1;
+    display: inline-block;
+    margin-bottom: 14px;
   }
 
   p {
@@ -89,7 +92,7 @@
     line-height: 140%;
     font-weight: 400;
     margin: 0;
-    margin-bottom: 198px;
+    margin-bottom: 181px;
 
     @include vp-767 {
       margin-bottom: 40px;
@@ -165,7 +168,7 @@
   }
 
   div {
-    padding: 28px;
+    padding: 28px 20px;
     background-color: $color-default-white;
     box-sizing: border-box;
     height: 100%;
@@ -177,7 +180,7 @@
   }
 
   h3 {
-    margin-bottom: 20px;
+    margin-bottom: 9px;
     color: $color-resolution-blue;
     font-family: $ff-roboto-condensed;
     font-size: 26px;
@@ -188,7 +191,7 @@
 
   p {
     margin: 0;
-    margin-bottom: 80px;
+    margin-bottom: 65px;
     line-height: 1;
     color: $color-resolution-blue;
     font-size: 16px;
