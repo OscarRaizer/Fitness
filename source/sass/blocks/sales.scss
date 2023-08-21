@@ -3,7 +3,7 @@
   padding-bottom: 120px;
 
   @include vp-1199 {
-    padding-top: 91px;
+    padding-top: 82px;
     padding-bottom: 100px;
   }
 
@@ -24,6 +24,17 @@
   color: $color-primary;
   text-align: center;
   margin-bottom: 26px;
+
+  @include vp-1199 {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    margin-bottom: 40px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    letter-spacing: 0.96px;
+  }
 }
 
 .sales__content-wrapper {
@@ -36,6 +47,7 @@
   @include vp-1199 {
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(2, auto);
+    gap: 20px;
   }
 
   @include vp-767 {
@@ -46,6 +58,7 @@
 .sales__banner-wrapper {
   display: flex;
   height: fit-content;
+  justify-content: space-between;
 
   @include vp-1199 {
     grid-column: 1 / -1;
@@ -64,10 +77,12 @@
   width: 50%;
 
   @include vp-1199 {
-    width: 70%;
+    padding: 60px 42px;
+    width: 61%;
   }
 
   @include vp-767 {
+    padding: 50px 42px;
     width: 100%;
     text-align: center;
   }
@@ -95,7 +110,7 @@
     margin-bottom: 181px;
 
     @include vp-767 {
-      margin-bottom: 40px;
+      margin-bottom: 15px;
     }
   }
 
@@ -125,6 +140,17 @@
   }
 }
 
+.sales__banner-photo {
+  width: 58%;
+
+  @include vp-1199 {
+    width: 100%;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
 
 .sales__banner-photo img {
   background-color: $color-deep-sky-blue;
@@ -144,6 +170,7 @@
   padding: 0;
   margin: 0;
   gap: 40px;
+  justify-content: space-between;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -155,6 +182,7 @@
 
   @include vp-767 {
     flex-direction: column;
+    gap: 10px;
   }
 
   li {
@@ -187,6 +215,10 @@
     font-style: normal;
     font-weight: 700;
     line-height: 1;
+
+    @include vp-1199 {
+      margin-bottom: 14px;
+    }
   }
 
   p {
@@ -197,6 +229,10 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
+
+    @include vp-1199 {
+      margin-bottom: 52px;
+    }
 
     @include vp-767 {
       margin-bottom: 35px;

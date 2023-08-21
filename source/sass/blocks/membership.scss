@@ -1,7 +1,7 @@
 .membership {
   background-color: $color-additional-white;
   width: 100%;
-  padding: 100px 103px;
+  padding: 120px 103px;
   position: relative;
   overflow: visible;
 
@@ -17,20 +17,21 @@
     position: absolute;
     content: "";
     width: 287px;
-    height: 384px;
+    top: 506px;
+    height: 100%;
     right: 0;
     bottom: 0;
     background-image: url("../img/membership-element.png");
     background-repeat: no-repeat;
     overflow: visible;
-    // overflow: hidden;
 
     @include vp-1199 {
       background-image: url("../img/membership-element-tablet.png");
-      height: 345px;
+      height: 100%;
       width: 347px;
       right: 0;
       bottom: 0;
+      top: 1344px;
     }
 
     @include vp-767 {

@@ -1,4 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+<linearGradient id="paint0_linear_5395_58" x1="14.435" y1="2.1949e-05" x2="77.2232" y2="7.77042" gradientUnits="userSpaceOnUse">
+<stop stop-color="#ED0233"/>
+<stop offset="1" stop-color="#003EB7"/>
+</linearGradient>
+<linearGradient id="paint1_linear_5395_58" x1="10" y1="35.6533" x2="39.0231" y2="6.52189" gradientUnits="userSpaceOnUse">
+<stop stop-color="#003D85"/>
+<stop offset="0.885417" stop-color="#B80027"/>
+</linearGradient>
+
 <linearGradient id="paint0_linear_82_466" x1="19.774" y1="3.00672e-05" x2="105.785" y2="10.6444" gradientUnits="userSpaceOnUse">
 <stop stop-color="#ED0233"/>
 <stop offset="1" stop-color="#003EB7"/>
@@ -13,6 +22,9 @@
 </g></symbol><symbol id="faq-btn-plus-hover" viewBox="0 0 42 42"><g fill="none">
 <circle cx="21" cy="21" r="21" fill="#102654"/>
 <path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="white"/>
+</g></symbol><symbol id="faq-btn-plus-mobile" viewBox="0 0 32 32"><g fill="none">
+<circle cx="16" cy="16" r="15.5" stroke="#1C3374"/>
+<path d="M16 10V16M16 22V16M16 16H22M16 16H10" stroke="#1C3374"/>
 </g></symbol><symbol id="faq-btn-plus" viewBox="0 0 42 42"><g fill="none">
 <circle cx="21" cy="21" r="20.5" stroke="#1C3374"/>
 <path d="M21 12V21M21 30V21M21 21H30M21 21H12" stroke="#1C3374"/>
@@ -34,6 +46,11 @@
 <circle cx="50" cy="50" r="49" stroke="#102654" stroke-width="2"/>
 <circle cx="50" cy="50" r="36" fill="white"/>
 <path d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z" fill="#102654"/>
+</g></symbol><symbol id="player-button-tablet" viewBox="0 0 73 73"><g fill="none">
+<circle cx="36.5" cy="36.5" r="35.5" stroke="url(#paint0_linear_5395_58)" stroke-opacity="0.2" stroke-width="2"/>
+<circle cx="36" cy="36" r="26" fill="url(#paint1_linear_5395_58)"/>
+<path d="M42 36L33 41.1962L33 30.8038L42 36Z" fill="white"/>
+
 </g></symbol><symbol id="player-button" viewBox="0 0 100 100"><g fill="none">
 <circle opacity="0.2" cx="50" cy="50" r="49" stroke="url(#paint0_linear_82_466)" stroke-width="2"/>
 <circle cx="50" cy="50" r="36" fill="url(#paint1_linear_82_466)"/>

@@ -21,6 +21,10 @@
     .slider-btn__icon {
       stroke: $color-icon-light;
     }
+
+    &:disabled {
+      opacity: 0;
+    }
   }
 
   .slider-btn__icon {

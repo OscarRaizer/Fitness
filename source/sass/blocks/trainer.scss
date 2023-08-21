@@ -27,11 +27,11 @@
 
 .trainer__wrapper {
   position: relative;
-  width: auto;
-  height: auto;
+  width: max-content;
 
   img {
-    background-color: $color-dark-cerulean;
+    width: 100vw;
+    height: auto;
   }
 
   &:hover,
@@ -204,7 +204,7 @@
       padding: 42px 26px 40px;
       top: 0;
       left: 0;
-      width: auto;
+      width: 100%;
       height: 100%;
       background-color: rgba(16, 38, 84, 0.89);
       color: $color-default-white;
@@ -218,7 +218,7 @@
         padding: 42px 26px 53px 26px;
         top: 0;
         left: 0;
-        width: auto;
+        width: 100%;
         height: 100%;
         background-color: rgba(16, 38, 84, 0.89);
         color: $color-default-white;

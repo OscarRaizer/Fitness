@@ -13,15 +13,16 @@
   padding-right: 301px;
 
   @include vp-1199 {
-    margin-top: 25px;
+    margin-top: 14px;
     padding-right: 45px;
-    gap: 30px;
+    gap: 25px;
   }
 
   @include vp-767 {
     min-width: 320px;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 5px;
   }
 }
 
@@ -60,9 +61,15 @@
   padding-top: 37px;
   white-space: nowrap;
 
+  @include vp-1199 {
+    padding-top: 30px;
+    padding-left: 8px;
+  }
+
   @include vp-767 {
     padding: 0;
     padding-top: 50px;
+    margin-left: 11px;
   }
 }
 
@@ -83,13 +90,15 @@
   @include vp-1199 {
     font-size: 34px;
     letter-spacing: 1.02px;
+    text-transform: lowercase;
+    padding-right: 5px;
   }
 
   @include vp-767 {
     font-size: 28px;
     letter-spacing: 0.84px;
     padding: 0;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     text-align: right;
   }
 }
@@ -113,11 +122,13 @@
   @include vp-1199 {
     font-size: 72px;
     text-transform: none;
+    padding-left: 0;
   }
 
   @include vp-767 {
     font-size: 72px;
     padding: 0;
+    letter-spacing: 3.6px;
   }
 }
 
@@ -146,8 +157,10 @@
     grid-column: 1 / -1;
     margin: 0;
     text-align: center;
-    justify-self: stretch;
+    // justify-self: stretch;
     margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -165,5 +178,6 @@
 
   @include vp-1199 {
     min-width: 250px;
+    height: 100%;
   }
 }

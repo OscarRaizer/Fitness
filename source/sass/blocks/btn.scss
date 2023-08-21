@@ -137,4 +137,12 @@
   &--banner {
     text-transform: uppercase;
   }
+
+  &--form {
+    @include vp-767 {
+      text-transform: uppercase;
+      font-size: 14px;
+      letter-spacing: 0.7px;
+    }
+  }
 }

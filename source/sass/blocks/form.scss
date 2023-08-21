@@ -10,8 +10,12 @@
     background-color: $color-sapphire;
     height: 100%;
 
+    @include vp-1199 {
+      padding: 67px 170px 70px 131px;
+    }
+
     @include vp-767 {
-      padding: 70px 15px;
+      padding: 58px 15px;
     }
   }
 
@@ -37,6 +41,7 @@
       font-weight: 600;
       line-height: normal;
       letter-spacing: 0.96px;
+      margin-bottom: 34px;
     }
   }
 }
