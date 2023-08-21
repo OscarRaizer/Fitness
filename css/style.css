@@ -2168,7 +2168,7 @@ h5 {
 .membership {
   background-color: #f8f9fc;
   width: 100%;
-  padding: 100px 103px;
+  padding: 120px 103px;
   position: relative;
   overflow: visible;
 }
@@ -2177,7 +2177,8 @@ h5 {
   position: absolute;
   content: "";
   width: 287px;
-  height: 384px;
+  top: 506px;
+  height: 100%;
   right: 0;
   bottom: 0;
   background-image: url("../img/membership-element.png");
@@ -2513,9 +2514,6 @@ h5 {
 
 .trainers figure {
   background-color: #f8f9fc;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -2603,12 +2601,14 @@ h5 {
 
 .trainer__wrapper {
   position: relative;
-  width: auto;
-  height: auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .trainer__wrapper img {
-  background-color: rgba(20, 54, 122, 0.5);
+  width: 100vw;
+  height: auto;
 }
 
 .trainer__wrapper:hover figcaption,
@@ -2730,11 +2730,21 @@ h5 {
   stroke: #ffffff;
 }
 
+.slider-btn:active:disabled {
+  opacity: 0;
+}
+
 .slider-btn .slider-btn__icon {
   width: 16px;
   height: 32px;
   fill: none;
   stroke: #afafaf;
+}
+
+.swiper-button-disabled {
+  opacity: 0.3;
+  outline: 0;
+  pointer-events: none;
 }
 
 .advantages .container {
@@ -2932,6 +2942,9 @@ h5 {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .sales__banner-info {
@@ -2989,6 +3002,10 @@ h5 {
   opacity: 0.8;
 }
 
+.sales__banner-photo {
+  width: 58%;
+}
+
 .sales__banner-photo img {
   background-color: #17b1ee;
   width: 100%;
@@ -3002,6 +3019,9 @@ h5 {
   padding: 0;
   margin: 0;
   gap: 40px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3073,7 +3093,7 @@ h5 {
 }
 
 .faq .container {
-  padding-top: 126px;
+  padding-top: 110px;
   padding-bottom: 120px;
 }
 
@@ -3101,7 +3121,7 @@ h5 {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  gap: 30px;
+  gap: 18px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   color: #102564;
 }
@@ -3166,7 +3186,7 @@ h5 {
 }
 
 .accordion__element.is-active .accordion__btn {
-  background: url("../img/sprite/faq-btn-minus.svg");
+  background: url("../img/sprite/faq-btn-minus.svg") no-repeat;
 }
 
 .accordion__title {
@@ -3186,7 +3206,6 @@ h5 {
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
-  margin-top: 10px;
 }
 
 .accordion__btn {
@@ -3234,7 +3253,7 @@ h5 {
 }
 
 .reviews .container {
-  padding: 125px 340px;
+  padding: 100px 340px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3466,13 +3485,13 @@ h5 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 22px;
-  color: ff121f;
+  color: #ff121f;
 }
 
 .form__field.is-invalid input,
 .form__field.is-invalid input:hover,
 .form__field.is-invalid input:focus {
-  border-bottom: 1px solid ff121f;
+  border-bottom: 1px solid #ff121f;
 }
 
 .form__field.is-invalid .is-invalid {
@@ -3660,23 +3679,31 @@ h5 {
   }
 
   .hero .container {
-    margin-top: 25px;
+    margin-top: 14px;
     padding-right: 45px;
-    gap: 30px;
+    gap: 25px;
   }
 
   .hero__info-wrapper {
     padding-top: 57px;
   }
 
+  .hero__info-wrapper ul {
+    padding-top: 30px;
+    padding-left: 8px;
+  }
+
   .hero__info-wrapper span {
     font-size: 34px;
     letter-spacing: 1.02px;
+    text-transform: lowercase;
+    padding-right: 5px;
   }
 
   .hero__info-wrapper h1 {
     font-size: 72px;
     text-transform: none;
+    padding-left: 0;
   }
 
   .hero__button {
@@ -3685,6 +3712,7 @@ h5 {
 
   .hero__photo-wrapper img {
     min-width: 250px;
+    height: 100%;
   }
 
   .logo {
@@ -3713,17 +3741,17 @@ h5 {
     align-items: center;
     text-align: center;
     margin: 100px 0 100px 0;
-    gap: 20px;
+    gap: 36px;
   }
 
   .gym__info h2 {
-    margin: 0;
+    font-size: 42px;
     line-height: normal;
-    margin-bottom: 6px;
+    margin: 0;
   }
 
   .gym__info span {
-    margin-bottom: 50px;
+    margin-bottom: 34px;
   }
 
   .gym__info p {
@@ -3733,6 +3761,10 @@ h5 {
 
   .gym__info p:last-of-type {
     display: none;
+  }
+
+  .gym__photo {
+    height: auto;
   }
 
   .gym__video-wrapper {
@@ -3747,8 +3779,19 @@ h5 {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    margin-top: -113px;
+    margin-top: -82px;
     right: 206px;
+  }
+
+  .gym__video {
+    height: 162px;
+    width: 263px;
+  }
+
+  .gym__video-play {
+    background: url("../img/sprite/player-button-tablet.svg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .membership {
@@ -3757,10 +3800,11 @@ h5 {
 
   .membership::after {
     background-image: url("../img/membership-element-tablet.png");
-    height: 345px;
+    height: 100%;
     width: 347px;
     right: 0;
     bottom: 0;
+    top: 1344px;
   }
 
   .membership h2 {
@@ -3772,10 +3816,11 @@ h5 {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 54px 111px 100px;
+    padding: 10px 111px 100px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    gap: 50px;
   }
 
   .tabs__element-wrapper {
@@ -3785,19 +3830,21 @@ h5 {
 
   .super-games .container {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 90px;
   }
 
   .super-games__banner-wrapper {
-    padding: 51px 45px;
+    padding: 37px 30px;
   }
 
   .super-games__banner-info {
-    gap: 29px;
+    gap: 35px;
+    margin-bottom: 0;
   }
 
   .super-games__banner-info h2 {
     font-size: 48px;
+    letter-spacing: 1.44px;
   }
 
   .super-games__banner-info dl {
@@ -3806,6 +3853,8 @@ h5 {
 
   .super-games__banner-info dt {
     font-size: 12px;
+    line-height: 1;
+    padding-bottom: 0;
   }
 
   .super-games__banner-info dd {
@@ -3832,6 +3881,8 @@ h5 {
     font-size: 10px;
     padding-top: 16px;
     padding-bottom: 16px;
+    min-width: 205px;
+    margin: 0 auto;
   }
 
   .trainers .container {
@@ -4000,6 +4051,11 @@ h5 {
     grid-row: 2/3;
     margin-left: 118px;
     margin-right: 118px;
+    padding: 30px 114px;
+  }
+
+  .advantages__item-main .advantages__item-data-wrapper {
+    gap: 9px;
   }
 
   .advantages__item-main dt {
@@ -4007,8 +4063,14 @@ h5 {
   }
 
   .sales .container {
-    padding-top: 91px;
+    padding-top: 82px;
     padding-bottom: 100px;
+  }
+
+  .sales h2 {
+    font-size: 42px;
+    letter-spacing: 1.26px;
+    margin-bottom: 40px;
   }
 
   .sales__content-wrapper {
@@ -4016,6 +4078,7 @@ h5 {
     grid-template-rows: repeat(2, auto);
     -ms-grid-columns: (auto)[2];
     grid-template-columns: repeat(2, auto);
+    gap: 20px;
   }
 
   .sales__banner-wrapper {
@@ -4023,7 +4086,12 @@ h5 {
   }
 
   .sales__banner-info {
-    width: 70%;
+    padding: 60px 42px;
+    width: 61%;
+  }
+
+  .sales__banner-photo {
+    width: 100%;
   }
 
   .sales__banner-photo img {
@@ -4040,9 +4108,23 @@ h5 {
     grid-column: 1/-1;
   }
 
+  .sales__cards-list h3 {
+    margin-bottom: 14px;
+  }
+
+  .sales__cards-list p {
+    margin-bottom: 52px;
+  }
+
   .faq .container {
     padding-top: 100px;
     padding-bottom: 100px;
+  }
+
+  .faq h2 {
+    text-align: center;
+    font-size: 42px;
+    letter-spacing: 1.26px;
   }
 
   .faq__tabs {
@@ -4067,7 +4149,7 @@ h5 {
 
   .faq__tabs-control {
     padding: 15px 57px;
-    width: 300px;
+    width: 160px;
   }
 
   .reviews .container {
@@ -4101,6 +4183,10 @@ h5 {
     padding: 55px 66px;
   }
 
+  .form .container {
+    padding: 67px 170px 70px 131px;
+  }
+
   .form h2 {
     font-size: 42px;
     font-style: normal;
@@ -4112,6 +4198,10 @@ h5 {
   .form-and-contacts {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  .contacts .container {
+    padding: 66px 159px 50px 132px;
   }
 
   .contacts h2 {
@@ -4131,7 +4221,11 @@ h5 {
   }
 
   .contacts__inner-wrapper:last-child {
-    padding-left: 0;
+    padding-left: 76px;
+  }
+
+  .contacts__inner-wrapper:not(:last-child)::before {
+    right: -15px;
   }
 
   .contacts__inner-wrapper:not(:last-child) {
@@ -4157,6 +4251,12 @@ h5 {
     max-width: none;
   }
 
+  .btn--form {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+  }
+
   .header {
     padding-top: 15px;
   }
@@ -4171,7 +4271,7 @@ h5 {
   }
 
   .footer__wrapper {
-    padding: 45px 15px 52px;
+    padding: 30px 0 52px;
     display: block;
     -webkit-column-count: 2;
     -moz-column-count: 2;
@@ -4215,6 +4315,7 @@ h5 {
     min-width: 320px;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 5px;
   }
 
   .hero__info-wrapper {
@@ -4226,19 +4327,21 @@ h5 {
   .hero__info-wrapper ul {
     padding: 0;
     padding-top: 50px;
+    margin-left: 11px;
   }
 
   .hero__info-wrapper span {
     font-size: 28px;
     letter-spacing: 0.84px;
     padding: 0;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     text-align: right;
   }
 
   .hero__info-wrapper h1 {
     font-size: 72px;
     padding: 0;
+    letter-spacing: 3.6px;
   }
 
   .hero__button {
@@ -4246,9 +4349,9 @@ h5 {
     grid-column: 1/-1;
     margin: 0;
     text-align: center;
-    -ms-grid-column-align: stretch;
-    justify-self: stretch;
     margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .hero__photo-wrapper {
@@ -4261,18 +4364,23 @@ h5 {
   }
 
   .logo img {
-    width: 82px;
-    height: 17px;
+    width: 69px;
+    height: 24px;
   }
 
   .gym {
-    margin: 70px 0 70px 0;
+    margin: 60px 0 136px 0;
     text-align: left;
-    gap: 10px;
+    gap: 20px;
+  }
+
+  .gym__info h2 {
+    font-size: 32px;
+    letter-spacing: 0.96px;
   }
 
   .gym__info span {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .gym__info p {
@@ -4281,6 +4389,7 @@ h5 {
 
   .gym__photo {
     width: 100vw;
+    height: 313px;
   }
 
   .gym__video-wrapper {
@@ -4288,7 +4397,8 @@ h5 {
   }
 
   .gym__video {
-    width: 100%;
+    width: 100vw;
+    min-width: 320px;
   }
 
   .membership {
@@ -4303,19 +4413,27 @@ h5 {
     font-size: 32px;
   }
 
+  .tabs__controls {
+    gap: 35px;
+  }
+
   .tabs__element-main {
     font-size: 72px;
     padding: 0;
   }
 
   .tabs__element-wrapper {
-    padding-left: 35px;
-    padding-right: 35px;
+    padding: 35px;
   }
 
   .tabs__element-wrapper h3 {
     font-size: 22px;
     padding: 0;
+  }
+
+  .tabs__element-price {
+    margin-top: 65px;
+    margin-bottom: 30px;
   }
 
   .tabs__element-price span {
@@ -4335,14 +4453,14 @@ h5 {
   }
 
   .super-games .container {
-    padding-top: 70px;
+    padding-top: 150px;
     padding-bottom: 63px;
     -ms-grid-columns: minmax(290px, 1fr);
     grid-template-columns: minmax(290px, 1fr);
   }
 
   .super-games__banner-wrapper {
-    padding: 50px 44px;
+    padding: 40px 31px;
   }
 
   .trainers .container {
@@ -4353,10 +4471,6 @@ h5 {
     margin-bottom: 41px;
     font-size: 32px;
     letter-spacing: 0.96px;
-  }
-
-  .trainers__slider {
-    max-width: 226px;
   }
 
   .trainers__slider-btn-next {
@@ -4394,7 +4508,7 @@ h5 {
     padding: 42px 26px 40px;
     top: 0;
     left: 0;
-    width: auto;
+    width: 100%;
     height: 100%;
     background-color: rgba(16, 38, 84, 0.89);
     color: #ffffff;
@@ -4414,7 +4528,7 @@ h5 {
     padding: 42px 26px 53px 26px;
     top: 0;
     left: 0;
-    width: auto;
+    width: 100%;
     height: 100%;
     background-color: rgba(16, 38, 84, 0.89);
     color: #ffffff;
@@ -4427,19 +4541,19 @@ h5 {
 
   .advantages .container {
     font-size: 70px;
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 70px;
+    padding: 60px 0 70px;
   }
 
   .advantages h2 {
-    margin-bottom: 52px;
+    margin-bottom: 65px;
     font-size: 32px;
+    letter-spacing: 0.96px;
   }
 
   .advantages ul {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    gap: 58px;
   }
 
   .advantages__item {
@@ -4450,10 +4564,15 @@ h5 {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     text-align: center;
+    gap: 13px;
   }
 
   .advantages__item:nth-last-child(1n+3) {
     border-bottom: none;
+  }
+
+  .advantages__item-description-wrapper {
+    gap: 10px;
   }
 
   .advantages__item-description-wrapper p {
@@ -4468,11 +4587,17 @@ h5 {
     max-height: 290px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    padding: 37px 60px;
   }
 
   .sales .container {
     padding-top: 63px;
     padding-bottom: 70px;
+  }
+
+  .sales h2 {
+    font-size: 32px;
+    letter-spacing: 0.96px;
   }
 
   .sales__content-wrapper {
@@ -4488,12 +4613,17 @@ h5 {
   }
 
   .sales__banner-info {
+    padding: 50px 42px;
     width: 100%;
     text-align: center;
   }
 
   .sales__banner-info p {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
+  }
+
+  .sales__banner-photo {
+    width: 100%;
   }
 
   .sales__cards-list {
@@ -4501,6 +4631,7 @@ h5 {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    gap: 10px;
   }
 
   .sales__cards-list li {
@@ -4516,8 +4647,13 @@ h5 {
   }
 
   .faq .container {
-    padding-top: 70px;
+    padding-top: 55px;
     padding-bottom: 70px;
+  }
+
+  .faq h2 {
+    font-size: 32px;
+    letter-spacing: 0.96px;
   }
 
   .faq__tabs-controls {
@@ -4533,8 +4669,50 @@ h5 {
     font-size: 16px;
   }
 
+  .accordion__element {
+    padding: 0;
+  }
+
+  .accordion__element.is-active .accordion__btn {
+    background-size: 32px;
+  }
+
+  .accordion__title h3 {
+    font-size: 18px;
+    line-height: 120%;
+    margin-top: 33px;
+  }
+
+  .accordion__btn {
+    min-width: 32px;
+    min-height: 32px;
+    background: url("../img/sprite/faq-btn-plus-mobile.svg") no-repeat;
+    background-size: 32px;
+    margin-right: 5px;
+    margin-top: 28px;
+  }
+
+  .accordion__btn:hover {
+    background-size: 32px;
+  }
+
+  .accordion__btn:focus {
+    background-size: 32px;
+  }
+
+  .accordion__btn:active {
+    background-size: 32px;
+  }
+
+  .accordion__content p {
+    font-size: 16px;
+    line-height: 140%;
+    padding-right: 0;
+    margin-top: 7px;
+  }
+
   .reviews .container {
-    padding: 63px 47px 70px;
+    padding: 80px 47px 70px;
   }
 
   .reviews h2 {
@@ -4581,7 +4759,7 @@ h5 {
     grid-template-columns: 1fr 1fr;
     -ms-grid-rows: (auto)[2];
     grid-template-rows: repeat(2, auto);
-    gap: 16px 15px;
+    gap: 9px 15px;
   }
 
   .review__author-image {
@@ -4596,7 +4774,7 @@ h5 {
   }
 
   .form .container {
-    padding: 70px 15px;
+    padding: 58px 15px;
   }
 
   .form h2 {
@@ -4604,6 +4782,7 @@ h5 {
     font-weight: 600;
     line-height: normal;
     letter-spacing: 0.96px;
+    margin-bottom: 34px;
   }
 
   .form__wrapper form {
@@ -4617,7 +4796,12 @@ h5 {
 
   .contacts .container {
     height: 100%;
-    padding: 70px 19px;
+    padding: 58px 19px 50px;
+  }
+
+  .contacts h2 {
+    font-size: 32px;
+    letter-spacing: 0.96px;
   }
 
   .contacts__info-wrapper {
@@ -4625,6 +4809,10 @@ h5 {
     grid-template-columns: 1fr;
     gap: 0;
     height: 100%;
+  }
+
+  .contacts__inner-wrapper:last-child {
+    padding-left: 0;
   }
 
   .contacts__inner-wrapper:not(:last-child)::before {
