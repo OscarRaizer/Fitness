@@ -1317,7 +1317,7 @@ button.swiper-pagination-bullet {
   font-style: bold;
   font-display: swap;
   font-family: "Roboto Condensed";
-  src: url("../fonts/RobotoCondensed/Robotocondensed-Medium.woff2") format("woff2"), url("../fonts/RobotoCondensed/Robotocondensed-Medium.woff") format("woff");
+  src: url("../fonts/RobotoCondensed/RobotoCondensed-Medium.woff2") format("woff2"), url("../fonts/RobotoCondensed/RobotoCondensed-Medium.woff") format("woff");
 }
 
 @font-face {
@@ -1325,7 +1325,7 @@ button.swiper-pagination-bullet {
   font-style: bold;
   font-display: swap;
   font-family: "Roboto Condensed";
-  src: url("../fonts/RobotoCondensed/Robotocondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed/Robotocondensed-Bold.woff") format("woff");
+  src: url("../fonts/RobotoCondensed/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed/RobotoCondensed-Bold.woff") format("woff");
 }
 
 @font-face {
@@ -2238,20 +2238,12 @@ h5 {
 }
 
 .tabs__element-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 
 .tabs__element {
@@ -2500,8 +2492,8 @@ h5 {
   width: 100%;
   height: 100%;
   background-color: #102564;
-  -o-object-fit: contain;
-  object-fit: contain;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .trainers {
@@ -3012,6 +3004,8 @@ h5 {
   height: 100%;
   min-width: 100%;
   display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .sales__cards-list {
@@ -3019,9 +3013,6 @@ h5 {
   padding: 0;
   margin: 0;
   gap: 40px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3813,15 +3804,13 @@ h5 {
   }
 
   .tabs__element-main {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 42px;
     padding: 10px 111px 100px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 50px;
   }
 
   .tabs__element-wrapper {
@@ -4097,8 +4086,6 @@ h5 {
 
   .sales__banner-photo img {
     max-width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
   }
 
   .sales__cards-list {
@@ -4107,6 +4094,9 @@ h5 {
     -ms-flex-direction: row;
     flex-direction: row;
     grid-column: 1/-1;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   .sales__cards-list h3 {
@@ -4150,7 +4140,7 @@ h5 {
 
   .faq__tabs-control {
     padding: 15px 57px;
-    width: 160px;
+    width: 20%;
   }
 
   .reviews .container {
@@ -4633,6 +4623,9 @@ h5 {
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 10px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 
   .sales__cards-list li {
@@ -4666,7 +4659,6 @@ h5 {
 
   .faq__tabs-control {
     padding: 12px 49px;
-    width: 141px;
     font-size: 16px;
   }
 

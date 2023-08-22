@@ -1214,11 +1214,12 @@
             <div class="form__wrapper" data-form-validate data-callback="base">
               <form method="post" action="https://echo.htmlacademy.ru/">
                 <div class="form__field" data-on-input-validate data-required data-validate-type="text"
-                  data-limitation="letters">
+                  data-limitation="name" data-message-base="текст ошибки">
                   <input type="text" aria-label="Имя" name="name" placeholder="Имя" required>
                 </div>
-                <div class="form__field" data-on-input-validate data-required data-validate-type="phone">
-                  <input type="number" aria-label="Телефон" name="telephone" placeholder="Телефон" required>
+                <div class="form__field" data-on-input-validate data-required data-validate-type="phone"
+                  data-message-base="ошибки текст">
+                  <input type="tel" aria-label="Телефон" name="telephone" placeholder="Телефон" required>
                 </div>
                 <button class="form__button btn btn--form" type="submit">
                   Отправить
