@@ -1,6 +1,10 @@
 .accordion__element {
-  padding: 25px 0;
+  padding: 32px 0 20px 21px;
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
+
+  @include vp-1199 {
+    padding: 52px 0 0 0;
+  }
 
   @include vp-767 {
     padding: 0;
@@ -31,7 +35,7 @@
     @include vp-767 {
       font-size: 18px;
       line-height: 120%;
-      margin-top: 33px;
+      margin-top: 39px;
     }
   }
 }
@@ -45,15 +49,14 @@
   border: 0;
   padding: 0;
   cursor: pointer;
-  margin-right: 28px;
 
   @include vp-767 {
     min-width: 32px;
     min-height: 32px;
     background: url("../img/sprite/faq-btn-plus-mobile.svg") no-repeat;
     background-size: 32px;
-    margin-right: 5px;
-    margin-top: 28px;
+    margin-right: 0;
+    margin-top: 50px;
   }
 
   &:hover {
@@ -70,6 +73,10 @@
 
     @include vp-767 {
       background-size: 32px;
+    }
+
+    &:not(:hover) {
+      background: url("../img/sprite/faq-btn-plus.svg") no-repeat;
     }
   }
 
@@ -92,7 +99,6 @@
     font-weight: 300;
     line-height: 140%;
     margin: 0;
-    margin-top: 14px;
     padding-right: 150px;
 
     @include vp-767 {

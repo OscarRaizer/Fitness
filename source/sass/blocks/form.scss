@@ -1,21 +1,35 @@
 .form {
   color: $color-default-white;
   height: 100%;
-
+  background-color: $color-sapphire;
 
   .container {
-    padding: 56px 170px 70px 92px;
+    padding: 56px 188px 45px 23px;
     display: flex;
     flex-direction: column;
     background-color: $color-sapphire;
     height: 100%;
+    align-items: end;
 
     @include vp-1199 {
-      padding: 67px 170px 70px 131px;
+      padding: 60px 161px 67px 131px;
+      align-items: stretch;
     }
 
     @include vp-767 {
-      padding: 58px 15px;
+      padding: 61px 15px;
+    }
+  }
+
+  .form-container-wrapper {
+    max-width: 410px;
+
+    @include vp-1199 {
+      max-width: 100%;
+    }
+
+    @include vp-767 {
+      max-width: 100%;
     }
   }
 
@@ -34,6 +48,7 @@
       font-weight: 700;
       line-height: normal;
       letter-spacing: 1.26px;
+      margin-bottom: 30px;
     }
 
     @include vp-767 {
@@ -50,6 +65,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 25px;
+
+  @include vp-1199 {
+    gap: 28px 56px;
+  }
 
   @include vp-767 {
     grid-template-columns: 1fr;

@@ -1,14 +1,14 @@
 .sales .container {
-  padding-top: 125px;
+  padding-top: 130px;
   padding-bottom: 120px;
 
   @include vp-1199 {
-    padding-top: 82px;
+    padding-top: 65px;
     padding-bottom: 100px;
   }
 
   @include vp-767 {
-    padding-top: 63px;
+    padding-top: 53px;
     padding-bottom: 70px;
   }
 }
@@ -23,7 +23,7 @@
   letter-spacing: 1.62px;
   color: $color-primary;
   text-align: center;
-  margin-bottom: 26px;
+  margin-bottom: 34px;
 
   @include vp-1199 {
     font-size: 42px;
@@ -47,7 +47,7 @@
   @include vp-1199 {
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(2, auto);
-    gap: 20px;
+    gap: 30px;
   }
 
   @include vp-767 {
@@ -73,11 +73,13 @@
 .sales__banner-info {
   background-color: $color-torch-red;
   color: $color-default-white;
-  padding: 45px;
+  padding-top: 49px;
+  padding-left: 45px;
   width: 50%;
 
   @include vp-1199 {
-    padding: 60px 42px;
+    padding: 0 44px;
+    padding-top: 51px;
     width: 61%;
   }
 
@@ -99,7 +101,7 @@
     font-weight: 700;
     line-height: 1;
     display: inline-block;
-    margin-bottom: 14px;
+    margin-bottom: 20px;
   }
 
   p {
@@ -107,7 +109,7 @@
     line-height: 140%;
     font-weight: 400;
     margin: 0;
-    margin-bottom: 181px;
+    margin-bottom: 185px;
 
     @include vp-767 {
       margin-bottom: 15px;
@@ -141,7 +143,7 @@
 }
 
 .sales__banner-photo {
-  width: 58%;
+  width: 50%;
 
   @include vp-1199 {
     width: 100%;
@@ -158,10 +160,10 @@
   height: 100%;
   min-width: 100%;
   display: block;
+  object-fit: cover;
 
   @include vp-1199 {
     max-width: 100%;
-    object-fit: cover;
   }
 }
 
@@ -170,7 +172,6 @@
   padding: 0;
   margin: 0;
   gap: 40px;
-  justify-content: space-between;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -178,11 +179,13 @@
   @include vp-1199 {
     flex-direction: row;
     grid-column: 1 / -1;
+    justify-content: space-between;
   }
 
   @include vp-767 {
     flex-direction: column;
     gap: 10px;
+    justify-content: space-between;
   }
 
   li {
@@ -196,11 +199,16 @@
   }
 
   div {
-    padding: 28px 20px;
+    padding: 25px 27px;
     background-color: $color-default-white;
     box-sizing: border-box;
     height: 100%;
     width: 100%;
+
+    @include vp-1199 {
+      padding-top: 25px;
+      padding-right: 41px;
+    }
 
     @include vp-767 {
       padding: 39px;
@@ -208,7 +216,7 @@
   }
 
   h3 {
-    margin-bottom: 9px;
+    margin-bottom: 11px;
     color: $color-resolution-blue;
     font-family: $ff-roboto-condensed;
     font-size: 26px;
@@ -223,7 +231,7 @@
 
   p {
     margin: 0;
-    margin-bottom: 65px;
+    margin-bottom: 69px;
     line-height: 1;
     color: $color-resolution-blue;
     font-size: 16px;

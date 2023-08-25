@@ -4,7 +4,7 @@
   gap: 46px;
   margin: 0 auto;
   justify-content: center;
-  margin-bottom: 39px;
+  margin-bottom: 48px;
   position: relative;
   width: fit-content;
   flex-wrap: wrap;
@@ -31,29 +31,27 @@
 }
 
 .tabs__element-main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  flex-wrap: wrap;
 
   @include vp-1199 {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    gap: 55px;
     padding: 10px 111px 100px;
     align-items: center;
-    gap: 50px;
   }
 
   @include vp-767 {
     font-size: 72px;
     padding: 0;
+    gap: 58px;
   }
 }
 
 .tabs__element {
   padding: 7px;
-  // width: 100%;
 
   &:hover,
   &:focus,
@@ -74,7 +72,7 @@
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  padding: 50px 70px;
+  padding: 50px 40px;
   font-family: $ff-roboto-condensed;
   color: $color-primary;
   font-style: normal;

@@ -1,50 +1,53 @@
 .super-games .container {
   display: grid;
   grid-template-columns: 0.75fr 1fr;
-  padding-top: 147px;
+  padding-top: 130px;
   padding-bottom: 106px;
   width: 100%;
   color: $color-default-white;
 
   @include vp-1199 {
-    padding-top: 100px;
+    padding-top: 110px;
     padding-bottom: 90px;
   }
 
   @include vp-767 {
-    padding-top: 150px;
     padding-bottom: 63px;
     grid-template-columns: minmax(290px, 1fr);
+    padding-top: 155px;
   }
 }
 
 .super-games__banner-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   background-color: $color-torch-red;
-  padding: 80px 60px 55px;
+  padding: 79px 73px 68px 75px;
   font-family: $ff-roboto-condensed;
 
   @include vp-1199 {
-    padding: 37px 30px;
+    padding: 49px 40px 47px 45px;
   }
 
   @include vp-767 {
-    padding: 40px 31px;
+    padding: 50px 41px;
   }
 }
 
 .super-games__banner-info {
   display: flex;
-  justify-content: space-between;
-  gap: 50px;
-  margin-bottom: 34px;
+  gap: 59px;
+  margin-bottom: 20px;
   align-items: center;
 
   @include vp-1199 {
+    margin-bottom: 6px;
     gap: 35px;
-    margin-bottom: 0;
+  }
+
+  @include vp-767 {
+    justify-content: center;
   }
 
   h2 {
@@ -53,26 +56,28 @@
     font-size: 82px;
     font-style: normal;
     font-weight: 600;
-    line-height: 107%;
+    line-height: 97%;
     display: inline-block;
-    letter-spacing: 6.46px;
+    letter-spacing: 3px;
     margin: 0;
     text-transform: uppercase;
-    padding-left: 22px;
+    padding-left: 13px;
     width: min-content;
+    margin-top: -7px;
 
     @include vp-1199 {
       font-size: 48px;
       letter-spacing: 1.44px;
+      padding-left: 7px;
+      margin-top: 0;
     }
   }
 
   dl {
     margin: 0;
-    margin-right: 22px;
 
-    @include vp-1199 {
-      margin-right: auto;
+    @include vp-767 {
+      margin: 0;
     }
   }
 
@@ -96,7 +101,7 @@
     font-weight: 700;
     line-height: 1;
     position: relative;
-    padding-top: 14px;
+    padding-top: 12px;
 
     @include vp-1199 {
       font-size: 24px;
@@ -114,7 +119,7 @@
   }
 
   dd:not(:last-of-type) {
-    margin-bottom: 9px;
+    margin-bottom: 13px;
 
     @include vp-1199 {
       margin-bottom: 5px;
@@ -141,7 +146,7 @@
 
   p {
     line-height: 1;
-    letter-spacing: 1.2px;
+    letter-spacing: 0.1px;
     margin: 0;
     font-size: 18px;
 
@@ -153,20 +158,23 @@
   @include vp-1199 {
     margin-bottom: 33px;
   }
+
+  @include vp-767 {
+    text-align: center;
+  }
 }
 
 
 .super-games__banner-button {
   font-size: 12px;
-  padding-top: 29px;
+  padding-top: 24px;
   padding-bottom: 29px;
 
   @include vp-1199 {
     font-size: 10px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     min-width: 205px;
-    margin: 0 auto;
   }
 }
 
@@ -174,5 +182,5 @@
   width: 100%;
   height: 100%;
   background-color: $color-primary;
-  object-fit: contain;
+  object-fit: cover;
 }

@@ -1,11 +1,12 @@
 .hero {
   @include vp-1199 {
     margin-right: 0;
+    margin-top: -10px;
   }
 }
 
 .hero .container {
-  margin-top: -17px;
+  margin-top: -27px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -20,9 +21,8 @@
 
   @include vp-767 {
     min-width: 320px;
-    margin-left: auto;
     margin-right: auto;
-    padding-right: 5px;
+    padding-right: 8px;
   }
 }
 
@@ -39,9 +39,10 @@
   }
 
   @include vp-767 {
-    min-width: 320px;
+    min-width: 305px;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 54px;
   }
 }
 
@@ -62,14 +63,18 @@
   white-space: nowrap;
 
   @include vp-1199 {
-    padding-top: 30px;
-    padding-left: 8px;
+    padding-top: 34px;
+    padding-left: 1px;
   }
 
   @include vp-767 {
     padding: 0;
     padding-top: 50px;
-    margin-left: 11px;
+    margin-left: 7px;
+    margin-top: 27px;
+    grid-column: 1 / 3;
+    align-self: flex-start;
+    justify-self: start;
   }
 }
 
@@ -139,7 +144,7 @@
   margin-left: auto;
   height: fit-content;
   justify-self: self-end;
-  padding: 22px 56px;
+  padding: 22px 53px;
   font-family: $ff-roboto-condensed;
   font-size: 12px;
   font-style: normal;
@@ -153,12 +158,12 @@
   }
 
   @include vp-767 {
-    padding: 23px 84px;
+    padding: 23px 67px;
     grid-column: 1 / -1;
     margin: 0;
     text-align: center;
-    // justify-self: stretch;
-    margin-top: 30px;
+    width: 290px;
+    margin-top: 18px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -172,12 +177,11 @@
 
 .hero__photo-wrapper img {
   background-color: #332254;
-  width: 500px;
-  height: 556px;
   object-fit: cover;
 
   @include vp-1199 {
     min-width: 250px;
     height: 100%;
+    max-width: 324px;
   }
 }

@@ -2,8 +2,27 @@
   background-color: $color-black-russian;
 }
 
+
+.footer__logo {
+  display: block;
+
+  @include vp-767 {
+    margin-top: 15px;
+  }
+
+  .logo img {
+    width: 88px;
+    height: 32px;
+
+    @include vp-767 {
+      width: 68px;
+      height: 15px;
+    }
+  }
+}
+
 .footer__wrapper {
-  padding-top: 34px;
+  padding-top: 40px;
   padding-bottom: 34px;
   display: flex;
   flex-wrap: nowrap;
@@ -23,13 +42,6 @@
   }
 }
 
-.footer__logo {
-  display: block;
-
-  @include vp-767 {
-    margin-top: 15px;
-  }
-}
 
 .footer__list-links {
   margin: 0;
