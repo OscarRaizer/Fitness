@@ -32,6 +32,11 @@
   img {
     width: 100vw;
     height: auto;
+    object-fit: contain;
+
+    @include vp-767 {
+      width: 100%;
+    }
   }
 
   &:hover,

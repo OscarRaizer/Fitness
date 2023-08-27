@@ -6,7 +6,7 @@
 }
 
 .hero .container {
-  margin-top: -27px;
+  margin-top: -51px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -14,15 +14,16 @@
   padding-right: 301px;
 
   @include vp-1199 {
-    margin-top: 14px;
+    margin-top: -26px;
     padding-right: 45px;
-    gap: 25px;
+    gap: 29px;
   }
 
   @include vp-767 {
     min-width: 320px;
-    margin-right: auto;
-    padding-right: 8px;
+    margin: 0;
+    padding: 0;
+    margin-top: -26px;
   }
 }
 
@@ -35,14 +36,13 @@
   color: #ffffff;
 
   @include vp-1199 {
-    padding-top: 57px;
+    padding-top: 55px;
   }
 
   @include vp-767 {
-    min-width: 305px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 54px;
+    width: 320px;
+    margin: 0;
+    padding: 54px 17px 0;
   }
 }
 
@@ -70,9 +70,8 @@
   @include vp-767 {
     padding: 0;
     padding-top: 50px;
-    margin-left: 7px;
+    margin-left: -3px;
     margin-top: 27px;
-    grid-column: 1 / 3;
     align-self: flex-start;
     justify-self: start;
   }
@@ -103,7 +102,7 @@
     font-size: 28px;
     letter-spacing: 0.84px;
     padding: 0;
-    padding-bottom: 40px;
+    padding-bottom: 39px;
     text-align: right;
   }
 }
@@ -122,18 +121,23 @@
   text-transform: uppercase;
   margin: 0;
   padding-left: 15px;
+  margin-top: -2px;
   padding-top: 0;
 
   @include vp-1199 {
     font-size: 72px;
     text-transform: none;
     padding-left: 0;
+    letter-spacing: 2.8px;
   }
 
   @include vp-767 {
+    position: relative;
     font-size: 72px;
     padding: 0;
-    letter-spacing: 3.6px;
+    letter-spacing: 2.1px;
+    margin-right: 0;
+    margin-left: -20px;
   }
 }
 
@@ -155,6 +159,7 @@
 
   @include vp-1199 {
     padding: 22px 31px;
+    margin-bottom: -10px;
   }
 
   @include vp-767 {
@@ -162,8 +167,8 @@
     grid-column: 1 / -1;
     margin: 0;
     text-align: center;
-    width: 290px;
-    margin-top: 18px;
+    width: 100%;
+    margin-top: 21px;
     margin-left: auto;
     margin-right: auto;
   }

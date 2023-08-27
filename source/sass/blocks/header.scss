@@ -1,8 +1,10 @@
 .header {
-  padding-top: 60px;
+  padding-top: 35px;
+  margin-bottom: 10px;
 
   @include vp-1199 {
-    padding-top: 45px;
+    padding-top: 42px;
+    margin-bottom: 12px;
   }
 
   @include vp-767 {

@@ -8,7 +8,7 @@
   }
 
   @include vp-767 {
-    padding-top: 53px;
+    padding-top: 55px;
     padding-bottom: 70px;
   }
 }
@@ -34,6 +34,7 @@
   @include vp-767 {
     font-size: 32px;
     letter-spacing: 0.96px;
+    margin-bottom: 42px;
   }
 }
 
@@ -84,7 +85,7 @@
   }
 
   @include vp-767 {
-    padding: 50px 42px;
+    padding: 50px 0 26px;
     width: 100%;
     text-align: center;
   }
@@ -102,6 +103,10 @@
     line-height: 1;
     display: inline-block;
     margin-bottom: 20px;
+
+    @include vp-767 {
+      margin-bottom: 14px;
+    }
   }
 
   p {
@@ -111,12 +116,17 @@
     margin: 0;
     margin-bottom: 185px;
 
+    @include vp-1199 {
+      margin-bottom: 180px;
+    }
+
     @include vp-767 {
-      margin-bottom: 15px;
+      margin-bottom: 25px;
     }
   }
 
   a {
+    display: inline-block;
     color: $color-default-white;
     font-size: 14px;
     font-style: normal;
@@ -125,6 +135,11 @@
     letter-spacing: 0.7px;
     text-transform: uppercase;
     position: relative;
+    margin-bottom: 50px;
+
+    @include vp-767 {
+      margin-bottom: 25px;
+    }
 
     &::before {
       position: absolute;
@@ -180,11 +195,12 @@
     flex-direction: row;
     grid-column: 1 / -1;
     justify-content: space-between;
+    gap: 30px;
   }
 
   @include vp-767 {
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     justify-content: space-between;
   }
 
@@ -199,19 +215,22 @@
   }
 
   div {
-    padding: 25px 27px;
+    padding: 25px 29px;
     background-color: $color-default-white;
     box-sizing: border-box;
     height: 100%;
     width: 100%;
 
     @include vp-1199 {
+      display: flex;
+      flex-direction: column;
       padding-top: 25px;
       padding-right: 41px;
+      padding-bottom: 32px;
     }
 
     @include vp-767 {
-      padding: 39px;
+      padding: 38px;
     }
   }
 
@@ -225,7 +244,7 @@
     line-height: 1;
 
     @include vp-1199 {
-      margin-bottom: 14px;
+      margin-bottom: 11px;
     }
   }
 
@@ -256,6 +275,16 @@
     letter-spacing: 0.6px;
     text-transform: uppercase;
     color: $color-resolution-blue;
+    width: fit-content;
+
+    @include vp-1199 {
+      align-self: start;
+      margin-top: auto;
+    }
+
+    @include vp-767 {
+      align-self: center;
+    }
 
     &::before {
       position: absolute;

@@ -1,14 +1,14 @@
 .faq .container {
-  padding-top: 116px;
+  padding-top: 119px;
   padding-bottom: 120px;
 
   @include vp-1199 {
-    padding-top: 100px;
+    padding-top: 105px;
     padding-bottom: 100px;
   }
 
   @include vp-767 {
-    padding-top: 64px;
+    padding-top: 75px;
     padding-bottom: 70px;
   }
 }
@@ -57,7 +57,7 @@
 .faq__tabs-controls {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 11px;
   max-width: 260px;
   width: 100%;
   align-items: center;
@@ -68,7 +68,7 @@
     max-width: none;
     width: 100%;
     justify-content: space-between;
-    gap: 10px;
+    gap: 9px;
   }
 
   @include vp-767 {
@@ -89,10 +89,11 @@
   line-height: normal;
   text-align: center;
   padding: 15px 50px;
+  align-self: stretch;
 
   @include vp-1199 {
     padding: 15px 57px;
-    width: 23%;
+    width: 24%;
   }
 
   @include vp-767 {

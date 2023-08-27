@@ -4,32 +4,37 @@
   background-color: $color-sapphire;
 
   .container {
-    padding: 56px 188px 45px 23px;
+    padding: 57px 170px 46px 103px;
     display: flex;
     flex-direction: column;
     background-color: $color-sapphire;
     height: 100%;
     align-items: end;
+    margin-right: 0;
 
     @include vp-1199 {
-      padding: 60px 161px 67px 131px;
+      padding: 60px 161px 65px 131px;
       align-items: stretch;
     }
 
     @include vp-767 {
-      padding: 61px 15px;
+      padding: 63px 15px 69px;
     }
   }
 
   .form-container-wrapper {
-    max-width: 410px;
+    width: 410px;
 
     @include vp-1199 {
       max-width: 100%;
+      align-self: center;
+      margin-left: -62px;
     }
 
     @include vp-767 {
       max-width: 100%;
+      margin: 0;
+      width: 100%;
     }
   }
 
@@ -40,14 +45,14 @@
     font-weight: 800;
     line-height: 156%;
     letter-spacing: 1.62px;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
 
     @include vp-1199 {
       font-size: 42px;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
-      letter-spacing: 1.26px;
+      letter-spacing: 0.9px;
       margin-bottom: 30px;
     }
 
@@ -64,10 +69,11 @@
 .form__wrapper form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
+  gap: 26px 28px;
 
   @include vp-1199 {
-    gap: 28px 56px;
+    gap: 30px 110px;
+    grid-template-columns: 1fr 209px;
   }
 
   @include vp-767 {

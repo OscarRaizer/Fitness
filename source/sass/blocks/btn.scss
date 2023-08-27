@@ -49,6 +49,7 @@
     color: rgba(16, 38, 84, 0.5);
     text-transform: none;
     position: relative;
+    letter-spacing: 0;
 
     &::after {
       content: "";
@@ -90,7 +91,6 @@
 
     @include vp-1199 {
       font-size: 18px;
-      letter-spacing: 0.5px;
     }
 
     @include vp-767 {
@@ -126,11 +126,12 @@
     @include vp-1199 {
       padding: 23px 42px;
       max-width: none;
-      width: 100%;
+      width: 94%;
     }
 
     @include vp-767 {
       max-width: none;
+      width: 90%;
     }
   }
 
@@ -145,5 +146,9 @@
     line-height: normal;
     letter-spacing: 0.7px;
     text-transform: uppercase;
+
+    @include vp-767 {
+      padding: 15px 30px;
+    }
   }
 }

@@ -46,7 +46,7 @@
             </ul>
             <span>омск</span>
             <h1 class="hero__info-title">Фитнес центр</h1>
-            <a href="#" class="hero__button btn">Купить абонемент</a>
+            <a href="#membership" class="hero__button btn">Купить абонемент</a>
           </div>
           <div class="hero__photo-wrapper">
             <picture>
@@ -106,7 +106,7 @@
           </div>
         </section>
       </div>
-      <section class="membership">
+      <section class="membership" id="membership">
         <div class="container">
           <h2>Абонементы</h2>
           <div class="membership__tabs tabs" data-tabs="parent" data-delay="300">
@@ -1218,11 +1218,11 @@
                 <div class="form__wrapper" data-form-validate data-callback="base">
                   <form method="post" action="https://echo.htmlacademy.ru/">
                     <div class="form__field" data-on-input-validate data-required data-validate-type="text"
-                      data-limitation="name" data-message-base="текст ошибки">
+                      data-limitation="name" data-message-base="Введите корректно имя">
                       <input type="text" aria-label="Имя" name="name" placeholder="Имя" required>
                     </div>
                     <div class="form__field" data-on-input-validate data-required data-validate-type="phone"
-                      data-message-base="ошибки текст">
+                      data-message-base="Введите корректно номер">
                       <input type="tel" aria-label="Телефон" name="telephone" placeholder="Телефон" required>
                     </div>
                     <button class="form__button btn btn--form" type="submit">

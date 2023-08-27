@@ -23,11 +23,11 @@
   flex-direction: column;
   justify-content: start;
   background-color: $color-torch-red;
-  padding: 79px 73px 68px 75px;
+  padding: 79px 79px 68px 78px;
   font-family: $ff-roboto-condensed;
 
   @include vp-1199 {
-    padding: 49px 40px 47px 45px;
+    padding: 48px 40px 47px 45px;
   }
 
   @include vp-767 {
@@ -37,12 +37,12 @@
 
 .super-games__banner-info {
   display: flex;
-  gap: 59px;
-  margin-bottom: 20px;
+  gap: 58px;
+  margin-bottom: 22px;
   align-items: center;
 
   @include vp-1199 {
-    margin-bottom: 6px;
+    margin-bottom: 9px;
     gap: 35px;
   }
 
@@ -75,6 +75,7 @@
 
   dl {
     margin: 0;
+    margin-top: 3px;
 
     @include vp-767 {
       margin: 0;
@@ -83,12 +84,10 @@
 
   dt {
     font-size: 18px;
-    padding-bottom: 5px;
 
     @include vp-1199 {
       font-size: 12px;
       line-height: 1;
-      padding-bottom: 0;
     }
   }
 
@@ -119,10 +118,12 @@
   }
 
   dd:not(:last-of-type) {
-    margin-bottom: 13px;
+    margin-bottom: 19px;
 
     @include vp-1199 {
+      gap: 3px;
       margin-bottom: 5px;
+      padding-top: 8px;
     }
   }
 
@@ -167,8 +168,8 @@
 
 .super-games__banner-button {
   font-size: 12px;
-  padding-top: 24px;
-  padding-bottom: 29px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 
   @include vp-1199 {
     font-size: 10px;

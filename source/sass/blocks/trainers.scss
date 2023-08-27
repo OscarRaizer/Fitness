@@ -2,7 +2,7 @@
   background-color: $color-default-background;
 
   .container {
-    padding: 3px 105px 105px;
+    padding: 7px 105px 105px;
 
     @include vp-1199 {
       padding: 15px 101px 100px;
@@ -48,9 +48,9 @@
   margin: 0 auto;
   max-width: 1156px;
 
-  @media (max-width: 1329px) {
-    max-width: 800px;
-  }
+  // @media (max-width: 1329px) {
+  //   max-width: 800px;
+  // }
 
   @include vp-1199 {
     max-width: 566px;

@@ -26,6 +26,10 @@
 }
 
 .gym__info {
+  @include vp-767 {
+    margin-bottom: -5px;
+  }
+
   h2 {
     font-family: $ff-alumni-sans;
     font-size: 48px;
@@ -74,7 +78,7 @@
     line-height: 24px;
     margin: 0;
     text-align: left;
-    margin-bottom: -18px;
+    margin-bottom: -14px;
 
     @include vp-1199 {
       max-width: 505px;
@@ -103,6 +107,10 @@
 
   @include vp-1199 {
     width: 100%;
+  }
+
+  @include vp-767 {
+    width: 100vw;
   }
 }
 
@@ -163,6 +171,11 @@
   }
 
   &.ready {
+    @include vp-767 {
+      width: fit-content;
+    }
+
+
     .gym__video-play {
       display: none;
     }
@@ -199,6 +212,13 @@
   &:hover {
     background: url("../img/sprite/player-button-hover.svg");
     cursor: pointer;
+
+    @include vp-1199 {
+      background: url("../img/sprite/player-button-hover-tablet.svg");
+      cursor: pointer;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
   }
 
   &:active {
