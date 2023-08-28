@@ -2410,7 +2410,7 @@ h5 {
   flex-direction: column;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
-  justify-content: start;
+  justify-content: flex-start;
   background-color: #ed0233;
   padding: 79px 79px 68px 78px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -3428,7 +3428,7 @@ h5 {
   height: 100%;
   -webkit-box-align: end;
   -ms-flex-align: end;
-  align-items: end;
+  align-items: flex-end;
   margin-right: 0;
 }
 
@@ -3588,7 +3588,7 @@ h5 {
   border-top: 1px solid #74819c;
   -webkit-box-align: start;
   -ms-flex-align: start;
-  align-items: start;
+  align-items: flex-start;
   margin: 0;
 }
 
@@ -4245,8 +4245,7 @@ h5 {
 
   .sales__cards-list a {
     -ms-flex-item-align: start;
-    -ms-grid-row-align: start;
-    align-self: start;
+    align-self: flex-start;
     margin-top: auto;
   }
 
@@ -4480,7 +4479,7 @@ h5 {
     padding: 0;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
-    justify-content: start;
+    justify-content: flex-start;
     -webkit-column-span: all;
     -moz-column-span: all;
     column-span: all;
@@ -4506,8 +4505,7 @@ h5 {
     margin-top: 27px;
     -ms-flex-item-align: start;
     align-self: flex-start;
-    -ms-grid-column-align: start;
-    justify-self: start;
+    justify-self: flex-start;
   }
 
   .hero__info-wrapper span {
@@ -5037,7 +5035,7 @@ h5 {
   .contacts .container {
     -webkit-box-align: start;
     -ms-flex-align: start;
-    align-items: start;
+    align-items: flex-start;
     margin: 0;
     height: 100%;
     padding: 60px 15px 41px;
