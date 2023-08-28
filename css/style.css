@@ -4414,8 +4414,14 @@ h5 {
   }
 
   .btn--membership {
+    padding: 23px 42px;
     max-width: none;
     width: 90%;
+  }
+
+  .btn--banner {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .btn--form {
@@ -4443,6 +4449,13 @@ h5 {
   .footer__logo {
     width: 68px;
     height: 25px;
+    margin-top: 20px;
+    margin-bottom: 9px;
+  }
+
+  .footer__logo .logo {
+    width: 68px;
+    height: 10px;
     margin-top: 20px;
     margin-bottom: 9px;
   }
