@@ -2,7 +2,6 @@
   background-color: $color-black-russian;
 }
 
-
 .footer__logo {
   display: block;
   margin-top: 10px;
@@ -18,19 +17,6 @@
     margin-top: 20px;
     margin-bottom: 9px;
   }
-
-  // .logo {
-  //   .logo img {
-  //     width: 88px;
-  //     height: 32px;
-  //     margin-top: 9px;
-
-  //     @include vp-767 {
-  //       width: 68px;
-  //       height: 15px;
-  //     }
-  //   }
-  // }
 }
 
 .footer__wrapper {
@@ -53,7 +39,6 @@
     column-gap: 28px;
   }
 }
-
 
 .footer__list-links {
   margin: 0;
@@ -134,7 +119,7 @@
 
   @include vp-767 {
     padding: 0;
-    justify-content: start;
+    justify-content: flex-start;
     column-span: all;
   }
 }

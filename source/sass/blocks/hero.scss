@@ -73,7 +73,7 @@
     margin-left: -3px;
     margin-top: 27px;
     align-self: flex-start;
-    justify-self: start;
+    justify-self: flex-start;
   }
 }
 
@@ -183,6 +183,7 @@
 .hero__photo-wrapper img {
   background-color: #332254;
   object-fit: cover;
+  overflow: hidden;
 
   @include vp-1199 {
     min-width: 250px;

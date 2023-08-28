@@ -24,7 +24,7 @@
     bottom: 0;
     background-image: url("../img/membership-element.png");
     background-repeat: no-repeat;
-    overflow: visible;
+    overflow: hidden;
 
     @include vp-1199 {
       background-image: url("../img/membership-element-tablet.png");

@@ -278,7 +278,7 @@
     width: fit-content;
 
     @include vp-1199 {
-      align-self: start;
+      align-self: flex-start;
       margin-top: auto;
     }
 

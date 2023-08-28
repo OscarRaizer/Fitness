@@ -9,7 +9,7 @@
     flex-direction: column;
     background-color: $color-sapphire;
     height: 100%;
-    align-items: end;
+    align-items: flex-end;
     margin-right: 0;
 
     @include vp-1199 {

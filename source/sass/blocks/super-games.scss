@@ -21,7 +21,7 @@
 .super-games__banner-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   background-color: $color-torch-red;
   padding: 79px 79px 68px 78px;
   font-family: $ff-roboto-condensed;
