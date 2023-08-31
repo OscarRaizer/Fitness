@@ -1614,8 +1614,12 @@ h5 {
   user-select: none;
 }
 
-.btn:hover,
-.btn:focus {
+.btn:hover {
+  background-color: #ffffff;
+  color: #103aae;
+}
+
+.btn:focus-visible {
   background-color: #ffffff;
   color: #103aae;
 }
@@ -1728,7 +1732,7 @@ h5 {
   padding-bottom: 50px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  background: conic-gradient(from 90deg at 21.03% 36.06%, #b80027, #003d85 62deg, #b80027 335deg);
+  background: conic-gradient(from 90deg at 16.03% 39.06%, #b80027, #003d85 62deg, #b80027 335deg);
 }
 
 .navigation {
@@ -1921,31 +1925,25 @@ h5 {
 }
 
 .hero .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 394px 1fr;
+  grid-template-columns: 394px 1fr;
   margin-top: -51px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
-  gap: 84px;
-  padding-right: 301px;
+  gap: 22px 65px;
+  padding-right: 302px;
 }
 
 .hero__info-wrapper {
-  max-width: 377px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[2];
   grid-template-columns: repeat(2, auto);
   -ms-grid-rows: (auto)[3];
   grid-template-rows: repeat(3, auto);
-  padding-top: 121px;
+  padding-top: 123px;
   color: #ffffff;
+  justify-self: flex-end;
 }
 
 .hero__info-wrapper ul {
@@ -1966,7 +1964,7 @@ h5 {
   align-self: center;
   padding: 0;
   padding-left: 20px;
-  padding-top: 37px;
+  padding-top: 70px;
   white-space: nowrap;
 }
 
@@ -1984,7 +1982,7 @@ h5 {
   grid-row: 1/2;
   margin-left: auto;
   padding-right: 48px;
-  margin-bottom: -20px;
+  margin-bottom: 12px;
   text-transform: uppercase;
   line-height: 1;
 }
@@ -2010,6 +2008,13 @@ h5 {
   padding-top: 0;
 }
 
+.hero__button-wrapper {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  justify-self: flex-end;
+}
+
 .hero__button {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -2018,12 +2023,9 @@ h5 {
   -ms-grid-row-span: 1;
   grid-row: 3/4;
   color: #ffffff;
-  margin-left: auto;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  -ms-grid-column-align: self-end;
-  justify-self: self-end;
   padding: 22px 53px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 12px;
@@ -2034,7 +2036,22 @@ h5 {
   text-transform: uppercase;
 }
 
+.hero__photo-wrapper {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .hero__photo-wrapper img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   background-color: #332254;
   -o-object-fit: cover;
   object-fit: cover;
@@ -2734,24 +2751,23 @@ h5 {
   background-color: transparent;
 }
 
-.slider-btn:hover,
-.slider-btn:focus {
-  outline: 1px solid #102654;
-}
-
 .slider-btn:active {
   background-color: #102654;
 }
 
-.slider-btn:active .slider-btn__icon {
-  stroke: #ffffff;
+.slider-btn:hover {
+  outline: 1px solid #102654;
 }
 
-.slider-btn:active:disabled {
+.slider-btn:focus-visible {
+  outline: 1px solid #102654;
+}
+
+.slider-btn:disabled {
   opacity: 0;
 }
 
-.slider-btn .slider-btn__icon {
+.slider-btn__icon {
   width: 16px;
   height: 32px;
   fill: none;
@@ -3717,6 +3733,10 @@ h5 {
     width: 94%;
   }
 
+  .btn--form {
+    padding: 15px 32px;
+  }
+
   .header {
     padding-top: 42px;
     margin-bottom: 12px;
@@ -3762,17 +3782,20 @@ h5 {
   }
 
   .hero .container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
     margin-top: -26px;
     padding-right: 45px;
-    gap: 29px;
+    gap: 16px 29px;
   }
 
   .hero__info-wrapper {
     padding-top: 55px;
+    max-width: 324px;
   }
 
   .hero__info-wrapper ul {
-    padding-top: 34px;
+    padding-top: 59px;
     padding-left: 1px;
   }
 
@@ -3781,6 +3804,7 @@ h5 {
     letter-spacing: 1.02px;
     text-transform: lowercase;
     padding-right: 5px;
+    margin-bottom: -2px;
   }
 
   .hero__info-wrapper h1 {
@@ -3793,6 +3817,7 @@ h5 {
   .hero__button {
     padding: 22px 31px;
     margin-bottom: -10px;
+    margin-right: 0;
   }
 
   .hero__photo-wrapper img {
@@ -3817,7 +3842,7 @@ h5 {
     align-items: center;
     text-align: center;
     margin: 100px 0 100px 0;
-    gap: 36px;
+    gap: 32px;
   }
 
   .gym__info h2 {
@@ -3865,7 +3890,7 @@ h5 {
   }
 
   .gym__video {
-    height: 162px;
+    height: 166px;
     width: 263px;
   }
 
@@ -3895,35 +3920,43 @@ h5 {
     width: 347px;
     right: 0;
     bottom: 0;
-    top: 1466px;
+    top: 1460px;
   }
 
   .membership h2 {
     font-size: 42px;
-    margin-bottom: 26px;
+    margin-bottom: 23px;
   }
 
   .tabs__controls {
     gap: 54px;
-    margin-bottom: 43px;
+    margin-bottom: 29px;
   }
 
   .tabs__element-main {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    gap: 55px;
+    gap: 26px;
     padding: 10px 111px 100px;
     -ms-grid-row-align: center;
     align-self: center;
   }
 
   .tabs__element-wrapper {
-    padding-left: 110px;
-    padding-right: 110px;
+    padding: 64px 110px 68px;
+  }
+
+  .tabs__element-wrapper h3 {
+    margin-bottom: 8px;
+  }
+
+  .tabs__element-price {
+    margin-top: 81px;
+    margin-bottom: 51px;
   }
 
   .super-games .container {
-    padding-top: 110px;
+    padding-top: 90px;
     padding-bottom: 90px;
   }
 
@@ -4239,7 +4272,8 @@ h5 {
   }
 
   .sales__cards-list p {
-    margin-bottom: 52px;
+    margin-bottom: 47px;
+    line-height: 22px;
   }
 
   .sales__cards-list a {
@@ -4249,7 +4283,7 @@ h5 {
   }
 
   .faq .container {
-    padding-top: 105px;
+    padding-top: 98px;
     padding-bottom: 100px;
   }
 
@@ -4289,13 +4323,13 @@ h5 {
   }
 
   .reviews .container {
-    padding: 110px 100px 100px;
+    padding: 115px 100px 100px;
   }
 
   .reviews h2 {
     font-size: 42px;
     letter-spacing: 1.26px;
-    margin-bottom: 42px;
+    margin-bottom: 40px;
   }
 
   .reviews__slider {
@@ -4321,7 +4355,7 @@ h5 {
   }
 
   .form .container {
-    padding: 60px 161px 65px 131px;
+    padding: 61px 161px 69px 131px;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
@@ -4345,7 +4379,7 @@ h5 {
   }
 
   .form__wrapper form {
-    gap: 30px 110px;
+    gap: 30px 108px;
     -ms-grid-columns: 1fr 209px;
     grid-template-columns: 1fr 209px;
   }
@@ -4357,7 +4391,7 @@ h5 {
   }
 
   .contacts .container {
-    padding: 62px 157px 42px 135px;
+    padding: 61px 157px 42px 135px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -4380,10 +4414,11 @@ h5 {
 
   .contacts__info-wrapper dd {
     font-size: 18px;
+    line-height: 33px;
   }
 
   .contacts__info-wrapper dl {
-    margin: 16px 0 23px;
+    margin: 16px 0 18px;
   }
 
   .contacts__inner-wrapper:last-child {
@@ -4491,15 +4526,17 @@ h5 {
   }
 
   .hero .container {
-    min-width: 320px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
     margin: 0;
     padding: 0;
     margin-top: -26px;
+    gap: 21px;
   }
 
   .hero__info-wrapper {
     width: 320px;
-    margin: 0;
+    margin: 0 auto;
     padding: 54px 17px 0;
   }
 
@@ -4517,7 +4554,7 @@ h5 {
     font-size: 28px;
     letter-spacing: 0.84px;
     padding: 0;
-    padding-bottom: 39px;
+    padding-bottom: 21px;
     text-align: right;
   }
 
@@ -4530,15 +4567,18 @@ h5 {
     margin-left: -20px;
   }
 
+  .hero__button-wrapper {
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .hero__button {
     padding: 23px 67px;
-    grid-column: 1/-1;
     margin: 0;
     text-align: center;
     width: 100%;
-    margin-top: 21px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .hero__photo-wrapper {
@@ -4580,17 +4620,17 @@ h5 {
 
   .gym__video-wrapper {
     margin-top: 40px;
+    height: 100%;
   }
 
   .gym__video {
     width: 100vw;
     min-width: 320px;
+    height: 52vw;
   }
 
   .gym__video.ready {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: 100vw;
   }
 
   .membership {
@@ -4604,10 +4644,11 @@ h5 {
   .membership h2 {
     font-size: 32px;
     letter-spacing: 0.8px;
-    margin-bottom: 25px;
+    margin-bottom: 19px;
   }
 
   .tabs__controls {
+    margin-bottom: 47px;
     gap: 45px;
   }
 
@@ -4628,7 +4669,7 @@ h5 {
 
   .tabs__element-price {
     margin-top: 65px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   .tabs__element-price span {
@@ -4655,7 +4696,7 @@ h5 {
   }
 
   .super-games__banner-wrapper {
-    padding: 50px 41px;
+    padding: 48px 41px 50px;
   }
 
   .super-games__banner-info {
@@ -4677,7 +4718,7 @@ h5 {
   }
 
   .trainers__title {
-    margin-bottom: 42px;
+    margin-bottom: 20px;
     font-size: 32px;
     letter-spacing: 0.96px;
   }
@@ -4692,6 +4733,8 @@ h5 {
 
   .trainer__wrapper img {
     width: 100%;
+    height: 100vw;
+    min-height: 274px;
   }
 
   .trainer__info-wrapper ul {
@@ -4747,14 +4790,14 @@ h5 {
     color: #ffffff;
   }
 
-  .slider-btn .slider-btn__icon {
+  .slider-btn__icon {
     width: 10px;
     height: 19px;
   }
 
   .advantages .container {
     font-size: 70px;
-    padding: 70px 0 70px;
+    padding: 45px 0;
   }
 
   .advantages h2 {
@@ -4809,7 +4852,7 @@ h5 {
   }
 
   .sales .container {
-    padding-top: 55px;
+    padding-top: 83px;
     padding-bottom: 70px;
   }
 
@@ -4869,11 +4912,11 @@ h5 {
   }
 
   .sales__cards-list div {
-    padding: 38px;
+    padding: 35px;
   }
 
   .sales__cards-list p {
-    margin-bottom: 35px;
+    margin-bottom: 29px;
   }
 
   .sales__cards-list a {
@@ -4890,7 +4933,7 @@ h5 {
   .faq h2 {
     font-size: 32px;
     letter-spacing: 0.96px;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
   }
 
   .faq__tabs-controls {
@@ -4950,7 +4993,7 @@ h5 {
   }
 
   .reviews .container {
-    padding: 75px 47px 70px;
+    padding: 75px 47px 73px;
   }
 
   .reviews h2 {
@@ -5044,7 +5087,7 @@ h5 {
     align-items: flex-start;
     margin: 0;
     height: 100%;
-    padding: 60px 15px 41px;
+    padding: 60px 15px 46px;
   }
 
   .contacts h2 {
@@ -5062,7 +5105,7 @@ h5 {
   }
 
   .contacts__info-wrapper dl {
-    margin: 4px 0 23px;
+    margin: 4px 0 16px;
   }
 
   .contacts__inner-wrapper:last-child {
