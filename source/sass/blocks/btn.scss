@@ -16,8 +16,12 @@
   transition: opacity $trans-default;
   user-select: none;
 
-  &:hover,
-  &:focus {
+  &:hover {
+    background-color: $color-default-background;
+    color: $color-additional-egyptian-blue;
+  }
+
+  &:focus-visible {
     background-color: $color-default-background;
     color: $color-additional-egyptian-blue;
   }
@@ -153,6 +157,10 @@
     line-height: normal;
     letter-spacing: 0.7px;
     text-transform: uppercase;
+
+    @include vp-1199 {
+      padding: 15px 32px;
+    }
 
     @include vp-767 {
       padding: 15px 30px;

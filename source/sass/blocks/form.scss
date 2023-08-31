@@ -13,7 +13,7 @@
     margin-right: 0;
 
     @include vp-1199 {
-      padding: 60px 161px 65px 131px;
+      padding: 61px 161px 69px 131px;
       align-items: stretch;
     }
 
@@ -72,7 +72,7 @@
   gap: 26px 28px;
 
   @include vp-1199 {
-    gap: 30px 110px;
+    gap: 30px 108px;
     grid-template-columns: 1fr 209px;
   }
 

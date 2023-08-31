@@ -22,10 +22,11 @@
 
   @include vp-1199 {
     gap: 54px;
-    margin-bottom: 43px;
+    margin-bottom: 29px;
   }
 
   @include vp-767 {
+    margin-bottom: 47px;
     gap: 45px;
   }
 }
@@ -43,7 +44,7 @@
 
   @include vp-1199 {
     grid-template-columns: 1fr;
-    gap: 55px;
+    gap: 26px;
     padding: 10px 111px 100px;
     align-self: center;
   }
@@ -84,8 +85,7 @@
   background-color: $color-default-white;
 
   @include vp-1199 {
-    padding-left: 110px;
-    padding-right: 110px;
+    padding: 64px 110px 68px;
   }
 
   @include vp-767 {
@@ -103,6 +103,10 @@
   line-height: 110.16%;
   margin: 0;
   margin-bottom: 10px;
+
+  @include vp-1199 {
+    margin-bottom: 8px;
+  }
 
   @include vp-767 {
     font-size: 22px;
@@ -125,9 +129,14 @@
   margin-top: 76px;
   margin-bottom: 55px;
 
+  @include vp-1199 {
+    margin-top: 81px;
+    margin-bottom: 51px;
+  }
+
   @include vp-767 {
     margin-top: 65px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   span {

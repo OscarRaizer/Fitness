@@ -36,6 +36,8 @@
 
     @include vp-767 {
       width: 100%;
+      height: 100vw;
+      min-height: 274px;
     }
   }
 
